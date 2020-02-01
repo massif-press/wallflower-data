@@ -9,7 +9,7 @@
         "id": "tg_quick_action"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 1,
     "effect": "Your mech and one character in range 3 and line of sight are immobilized. On any subsequent turn, you can end this effect as a free action, or your target can end it by successfully hitting you with a ranged or melee attack or by passing a hull save as a quick action.",
@@ -34,7 +34,7 @@
         "val": 3
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 2,
     "effect": "Quick Action<br>You project a shield of resonant ferrofluid over an allied character in range 5. That character gains overshield 8, but any damage dealt to this overshield before reductions of any kind also deals kinetic damage to you as if the attacker had also damaged you, no matter how far away you are.",
@@ -61,7 +61,7 @@
         "id": "tg_reaction"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 2,
     "effect": "Your mech is capable of projecting a spot magnetic force of incredible power. You can prime this system as a quick action. Once primed, once before the start of your next turn as a reaction when an ally within range 3 and line of sight of you is targeted by an attack or other effect that deals at least partly kinetic or explosive damage, before the attack is made you can cause the attack or effect to instead target your mech. This attack or effect transfers no matter if the original could hit you or not (such as a melee attack).",
@@ -82,7 +82,7 @@
         "id": "tg_deployable"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 3,
     "effect": "You project a size 2, 20 HP spray of liquid metal in a free adjacent space that rapidly hardens into wicked spines. The barrier is a solid object that can be used for hard cover by any character, and the first time in a round any character is knocked back into the barrier, that character takes 1d6 AP kinetic damage. You can only have one barrier deployed at a time, if a new one is deployed, the other dissolves.",
@@ -109,7 +109,7 @@
         "id": "tg_unique"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "EMPEROR",
     "license_level": 1,
     "effect": "A hostile character in sensor range gains overshield 4. When this overshield is lost for any reason, that character releases an electric pulse in a burst 1 area around them. All characters caught within, including the original character, must pass a systems save or take 4 AP energy damage and become impaired until the end of their next turn, or half and not impaired on a successful save.",
@@ -130,7 +130,7 @@
         "id": "tg_shield"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "EMPEROR",
     "license_level": 2,
     "effect": "An allied character in sensor range gains a disruptive charge until the start of your next turn.<br>When a hostile character moves to a space within range 3 of that character, the charge sparks to that character. Characters that start their turns within range 3 of the charged character are unaffected until they move outside of that area and re-enter it.<br>The character struck by the charge must pass an engineering save or take 1 energy damage, be knocked back 2 spaces, knocked prone, and shredded until the end of their next turn.",
@@ -154,7 +154,7 @@
         "id": "tg_shield"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "EMPEROR",
     "license_level": 2,
     "effect": "An allied character in sensor range gains overshield 6. While they have this overshield, they are resistant to heat inflicted by other characters.",
@@ -175,7 +175,7 @@
         "id": "tg_unique"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "EMPEROR",
     "license_level": 3,
     "effect": "Create a blast 2 area in range that activates at the end of your turn and lasts until the end of the scene or until you take this action again. The first time each turn a hostile character in this area is struck by a ranged or melee attack, they release a discharge of energy in a burst 1 area around them. That character and any other character caught in the area take 1 energy damage.",
@@ -202,7 +202,7 @@
         "id": "tg_unique"
       }
     ],
-    "source": "NONE",
+    "source": "SSC",
     "license": "EMPEROR",
     "license_level": 3,
     "effect": "An allied character in sensor range and line of sight gains overshield 6. While they have this overshield, all their melee attacks gain the ap tag and the first time a turn they hit with a melee attack or take damage from a hostile character, they release a burst 1 aoe around them. All other characters caught within take 1 energy damage.",
