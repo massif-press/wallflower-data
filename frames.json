@@ -6,7 +6,7 @@
     "mechtype": [
       "Defender"
     ],
-    "y_pos": "",
+    "y_pos": 28,
     "description": "A proof-of-concept more than a line production chassis, a select few White Witch models have been released via Smith Shimano’s LUX-EXOTIC group, only available to select pilots outside of SSC’s Constellar security services. The White Witch builds from the platform established by the Black Witch; utilizing SSC’s magtech weapons and equipment, the White Witch takes the BW platform and tunes it for hyper-solipsistic focus, narrowing the effect cone to encompass only the WW and its pilot.<br>The White Witch marks SSC’s first foray into null-ordinance/ environmental manipulation chassis: when active, the WW’s entire chassis becomes a conduit for onboard base-compound magtech agitators to exploit its immediate environment, drawing atomic components out of natural, organic, and inorganic objects and surfaces to enhance its built-in defensive systems. The White Witch reorganizes these molecular draws using its chassis as substrate, quickly forming substantive defenses and weapons from “thin air”.<br>This process has understandably traumatic effects on organic and inorganic materials inside the immediate effect cone.",
     "mounts": [
       "Flex",
@@ -54,6 +54,7 @@
       "passive_effect": "Each time this mech takes damage from a source owned by a hostile character (even if that damage is reduced or ignored), increase it’s armor by 1 for the rest of this scene, up to a maximum increase of 6 (you can use a die to track this)."
     },
     "data_type": "frame",
+    "image_url": "https://i.imgur.com/DQHJ8Sq.png",
     "aptitude": {},
     "counters": [
       {
@@ -73,7 +74,7 @@
       "Support",
       "Artillery"
     ],
-    "y_pos": "",
+    "y_pos": 10,
     "description": "",
     "mounts": [
       "Main"
@@ -113,6 +114,7 @@
       }
     },
     "data_type": "frame",
+    "image_url": "",
     "aptitude": {}
   }
 ]
