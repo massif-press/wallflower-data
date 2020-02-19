@@ -54,8 +54,8 @@
       "passive_effect": "Each time this mech takes damage from a source owned by a hostile character (even if that damage is reduced or ignored), increase it’s armor by 1 for the rest of this scene, up to a maximum increase of 6 (you can use a die to track this)."
     },
     "data_type": "frame",
-    "image_url": "https://i.imgur.com/DQHJ8Sq.png",
     "aptitude": {},
+    "image_url": "https://i.imgur.com/DQHJ8Sq.png",
     "counters": [
       {
         "id": "ctr_ferroreactive_armor",
@@ -114,7 +114,7 @@
       }
     },
     "data_type": "frame",
-    "image_url": "",
-    "aptitude": {}
+    "aptitude": {},
+    "image_url": ""
   }
 ]
