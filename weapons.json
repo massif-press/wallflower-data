@@ -136,7 +136,7 @@
     "damage": [
       {
         "type": "energy",
-        "val": 2
+        "val": "1d6"
       }
     ],
     "effect": {
@@ -145,24 +145,26 @@
       "abilities": [
         {
           "effect_type": "Offensive",
-          "attack": "Allied characters caught in the area are not attacked, but instead gain overshield +2. This special overshield does not replace the last one created, but rather increases it, up to a maximum of overshield 10 (if an ally has no overshield, they go to overshield 2)."
+          "attack": "Allied characters caught in the area are not attacked, but instead gain overshield +2. This special overshield does not replace the last one created, but rather increases it, up to a maximum of overshield 12 (if an ally has no overshield, they go to overshield 2)."
         },
         {
           "effect_type": "Profile",
           "name": "Drawn Back",
           "damage": [{
             "type": "energy",
-            "val": 2
+            "val": "1d6"
           }],
           "range": [{
             "type": "line",
             "val": 20
           }],
-          "detail": ""
+          "detail": "This weapon's overshield effect increases to +4."
         }
       ]
     },
     "description": "“Directed Subjective Convergence Weapon, Pattern 3. Or as Visual calls it, the ‘Marathon Arc’. I suppose it is a better name. Imposing. Inaccurate but Visual has never been accurate. The Arc forces realignment along a superpositional plane, destabilizing targets without the correct pineal hash while imparting sympathetic lensing on those with the correct hash; a simple ‘weapon’ that emulates an Overmind’s corrective/imperative push.”",
-    "tags": []
+    "tags": [{
+      "id": "tg_ap"
+    }]
   }
 ]
