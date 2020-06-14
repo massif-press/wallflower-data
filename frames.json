@@ -120,5 +120,58 @@
     "data_type": "frame",
     "aptitude": {},
     "image_url": "https://i.imgur.com/BGu6Vg6.png"
+  },
+  {
+    "id": "mf_kidd",
+    "source": "IPS-N",
+    "name": "KIDD",
+    "mechtype": [
+      "Support"
+    ],
+    "y_pos": 25,
+    "description": "Sidegraded from IPS-N’s Lancaster support frame, the Kidd was produced under a joint development contract by IPS-N’s Titan-Enceladus Field Project and Northstar Branch Robotics. The original frame pattern was bought off a mining commune that had rigged their support drones in a slapdash but ingenious neural mesh that both hardened them against tech intrusion and increased their operational efficiency many times over. Urban legend was that the original rig builder had used his drone team to bury caches of black market volador tech in several wandering asteroids, and out of extreme paranoia made his systems almost impossible to crack. To this day Northstar Robotics tries valiantly to squash down persistent rumors that clues to the location of the caches are hidden in the Kidd’s code base.<br>Designed to provide an aggressive, all-theater support solution to rugged field teams in hostile environments, the Kidd mounts a trio of powerful systems to ensure a broad operational envelope. The Jolly Roger semi-autonomous personal orbital platform, bundled with all proven-license Kidd platforms establishes theater control in any open or near-surface environment. A squadron of bundled WARCHILD subalterns (and onboard maintenance suite) guarantee friendly support in any environment, and provide a broad suite of tactical possibility. Finally, Titan-Enceladus’ SMOKESTACK heat sink pylon represents the cutting edge of IPS-N’s thermodynamic axiomatics, allowing users to offset an amount of heat via the creation of a pinhole-window into an Omega State of absolute zero.",
+    "mounts": [
+      "Main"
+    ],
+    "stats": {
+      "size": 2,
+      "armor": 2,
+      "hp": 5,
+      "evasion": 6,
+      "edef": 12,
+      "heatcap": 4,
+      "repcap": 4,
+      "sensor_range": 8,
+      "tech_attack": 1,
+      "save": 11,
+      "speed": 6,
+      "sp": 10
+    },
+    "traits": [
+      {
+        "name": "Drone Catapult",
+        "description": "On its first turn in any combat scene, the Kidd can deploy any one system with the drone or deployable tag as a free action."
+      },
+      {
+        "name": "Re-Route Power",
+        "description": "As a quick action 1/round, the Kidd can destroy one of its deployable or drones to either grant 1d6+3 overshield to an adjacent ally to that drone or system or deal 1d6+3 ap energy damage to an adjacent enemy to that drone or system. It can’t do this to a drone or deployable that was deployed or created in the same round."
+      },
+      {
+        "name": "Recycle",
+        "description": "After any combat scene, the Kidd regains +1 limited charges on all its systems with the drone or deployable tags for every 3 destroyed drone or deployables belonging to the Kidd on the battlefield."
+      }
+    ],
+    "core_system": {
+      "name": "Jolly Roger Semi-Autonomous Personal Orbital Platform",
+      "description": "",
+      "active_name": "Skull and Bones",
+      "active_effect": "For the rest of the scene the Roger’s first two effects become blast 2 and its beam weapon affects all characters in a line 10 area.",
+      "tags": [],
+      "passive_name": "Jolly Roger",
+      "passive_effect": "At the start of any combat scene, the Kidd activates an uplink to a paired Jolly Roger, a semi-autonomous personal orbital platform. The Roger needs to maintain calibration with the Kidd, which you can track with the Jolly Roger die (d6, starting at 1). When one of the following occurs, tick the die up by 1:<ul><li>The Kidd deploys a drone or deployable system</li><li>A hostile character in sensor range and line of sight of the Kidd takes a tech action against an allied character</li><li>The Kidd takes a tech action targeting at least one ally</li></ul>As a quick action 1/round, the Kidd can activate a function of the Roger, resetting the die to 1. It can take one of the following actions, depending on the value of the die:<ul><li><b>3+:</b> Scan every enemy in a blast 1 area and apply Lock On.</li><li><b>5+:</b> Every enemy in a blast 1 area must pass a systems save or become Impaired and Jammed until the end of their next turn.</li><li><b>6:</b> The Roger fires its beam weapon, piercing a narrow hole through walls and obstructions. One enemy on the battlefield must pass an agility save or take 3d6 AP energy damage, or half on a successful save.</li></ul>The Roger does not need line of sight to activate these effects and it will easily pierce through objects and terrain, though if there are other more potent barriers (such as energy shields that block effects from crossing due to LoS) they will block them normally."
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://i.imgur.com/4Os1ZCY.png"
   }
 ]
