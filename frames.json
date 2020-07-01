@@ -96,11 +96,11 @@
     "traits": [
       {
         "name": "Storm Shield",
-        "description": "The Emperor’s hp does not increase due to grit. Instead, at the start of any scene, the Emperor gains overshield equal to 6 + its grit."
+        "description": "The Emperor’s hp does not increase due to grit. Instead, at the start of any scene, the Emperor gains overshield equal to 6 + its grit. This overshield refreshes when you take structure damage."
       },
       {
         "name": "Imperial Vestment",
-        "description": "Whenever the Emperor grants overshield to another character, it gains the same amount of overshield. If the Emperor gains overshield from any source, including this trait, it increases its current overshield by that amount instead of replacing it. In addition, if that overshield had effects, it can inherit those effects, but only the effects of one system at a time (you can choose which is kept or replaced). The Emperor’s current overshield cannot exceed the amount granted by Storm Shield. This overshield refreshes when you take structure damage."
+        "description": "Whenever the Emperor grants overshield to another character, it gains the same amount of overshield. If the Emperor gains overshield from any source, including this trait, it increases its current overshield by that amount instead of replacing it. In addition, if that overshield had effects, it can inherit those effects, but only the effects of one system at a time (you can choose which is kept or replaced). The Emperor’s current overshield cannot exceed the amount granted by Storm Shield."
       },
       {
         "name": "Sovereign Presence",
