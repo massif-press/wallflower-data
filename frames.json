@@ -134,13 +134,13 @@
       "Main"
     ],
     "stats": {
-      "size": 2,
+      "size": 1,
       "armor": 2,
-      "hp": 5,
+      "hp": 6,
       "evasion": 6,
       "edef": 12,
       "heatcap": 4,
-      "repcap": 4,
+      "repcap": 5,
       "sensor_range": 8,
       "tech_attack": 1,
       "save": 11,
@@ -149,29 +149,29 @@
     },
     "traits": [
       {
-        "name": "Drone Catapult",
-        "description": "On its first turn in any combat scene, the Kidd can deploy any one system with the drone or deployable tag as a free action."
+        "name": "Rapid Deploy",
+        "description": "On its first turn in any combat scene, the Kidd can deploy or activate any one system with the drone or deployable tag as a free action."
       },
       {
         "name": "Re-Route Power",
-        "description": "As a quick action 1/round, the Kidd can destroy one of its deployable or drones to either grant 1d6+3 overshield to an adjacent ally to that drone or system or deal 1d6+3 ap energy damage to an adjacent enemy to that drone or system. It can’t do this to a drone or deployable that was deployed or created in the same round."
+        "description": "As a quick action 1/round, the Kidd can destroy one of its deployables or drones to either grant 1d6+3 overshield to an adjacent ally to that drone or system or deal 1d6+3 ap energy damage to an adjacent enemy to that drone or system. It can’t do this to a drone or deployable that was deployed or created in the same round. Systems without the limited tag destroyed this way must be repaired before becoming usable again."
       },
       {
         "name": "Recycle",
-        "description": "After any combat scene, the Kidd regains +1 limited charges on all its systems with the drone or deployable tags for every 3 destroyed drone or deployables belonging to the Kidd on the battlefield."
+        "description": "If the Kidd used Re-Route power in any scene, it gets +1 limited charge back to a system of its choice with the drone or deployable tag."
       }
     ],
     "core_system": {
       "name": "Jolly Roger Semi-Autonomous Personal Orbital Platform",
       "description": "",
       "active_name": "Skull and Bones",
-      "active_effect": "For the rest of the scene the Roger’s first two effects become blast 2 and its beam weapon affects all characters in a line 10 area.",
+      "active_effect": "For the rest of the scene the Kidd, the Roger’s first two effects become blast 2 and its beam weapon affects all characters in a line 15 area.",
       "tags": [],
       "passive_name": "Jolly Roger",
-      "passive_effect": "At the start of any combat scene, the Kidd activates an uplink to a paired Jolly Roger, a semi-autonomous personal orbital platform. The Roger needs to maintain calibration with the Kidd, which you can track with the Jolly Roger die (d6, starting at 1). When one of the following occurs, tick the die up by 1:<ul><li>The Kidd deploys a drone or deployable system</li><li>A hostile character in sensor range and line of sight of the Kidd takes a tech action against an allied character</li><li>The Kidd takes a tech action targeting at least one ally</li></ul>As a quick action 1/round, the Kidd can activate a function of the Roger, resetting the die to 1. It can take one of the following actions, depending on the value of the die:<ul><li><b>3+:</b> Scan every enemy in a blast 1 area and apply Lock On.</li><li><b>5+:</b> Every enemy in a blast 1 area must pass a systems save or become Impaired and Jammed until the end of their next turn.</li><li><b>6:</b> The Roger fires its beam weapon, piercing a narrow hole through walls and obstructions. One enemy on the battlefield must pass an agility save or take 3d6 AP energy damage, or half on a successful save.</li></ul>The Roger does not need line of sight to activate these effects and it will easily pierce through objects and terrain, though if there are other more potent barriers (such as energy shields that block effects from crossing due to LoS) they will block them normally."
+      "passive_effect": "At the start of any combat scene, the Kidd activates an uplink to a paired <i>Jolly Roger</i>, a orbital satellite weapon. The <i>Roger</i> needs to maintain calibration with the Kidd, which you can track with the Jolly Roger die (d6, starting at 1). When one of the following occurs, tick the die up by 1:<ul><li>The Kidd deploys a drone or deployable system</li><li>The Kidd takes a tech action targeting at least one ally</li></ul>Each of these effects can trigger only 1/round independently. However, the die also ticks up by 1 each time a hostile character takes a tech action against an allied character in the Kidd’s sensor range, with no limit.<br>As a quick action 1/round, the Kidd can activate a function of the <i>Roger</i>, resetting the die to 1. It can take one of the following actions, depending on the value of the die:<ul><li><b>3+:</b> Scan every enemy in a blast 1 area and apply Lock On.</li><li><b>5+:</b> Every enemy in a blast 1 area must pass a systems save or become Impaired, Jammed, and Slowed until the end of their next turn.</li><li><b>6:</b> The <i>Roger</i> fires its beam weapon, piercing a narrow hole through walls and obstructions. One enemy on the battlefield must pass an agility save or take 3d6+3 AP energy damage, or half on a successful save.</li></ul>The <i>Roger</i> does not need line of sight to activate these effects and it will easily pierce through objects and terrain, though if there are other more potent barriers (such as energy shields that block effects from crossing due to LoS) they will block them normally."
     },
     "data_type": "frame",
     "aptitude": {},
-    "image_url": "https://i.imgur.com/4Os1ZCY.png"
+    "image_url": "https://i.imgur.com/gUtbLrv.png"
   }
 ]

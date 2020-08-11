@@ -28,6 +28,9 @@
     "sp": 2,
     "tags": [
       {
+        "id": "tg_quick_action"
+      },
+      {
         "id": "tg_overshield"
       },
       {
@@ -264,8 +267,8 @@
     "aptitude": {}
   },
   {
-    "id": "ms_pebcap",
-    "name": "PEBCAP",
+    "id": "ms_pebcac",
+    "name": "PEBCAC",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -282,24 +285,24 @@
     "effect": {
       "effect_type": "Tech",
       "activation": "Quick",
-      "detail": "An allied mech character in sensor range and line of sight quickly flash reboots from the system level. This ends all effects caused by tech actions, stops NHP cascade, and the affected character becomes immune to all tech actions other than this one (hostile or allied) until the end of their next turn. Roll 1d6 for side effects. These effects take place immediately, don’t take an action or reaction, and any movement taken is involuntary.<ul><li>1 - Character becomes jammed until the end of their next turn</li><li>2 - Character moves up to its speed in a direction of the GM’s choice</li><li>3 - Character immediately moves up to 3 spaces towards the nearest character (allied or hostile) and takes the improvised attack action against that character. If no characters are in range, it only moves.</li><li>4 - Character falls prone</li><li>5 - Character vents 1d6 heat and deals the amount cooled as energy damage to all adjacent characters</li><li>6 - Character immediately takes the stabilize action and can choose what to do.</li></ul>"
+      "detail": "An allied mech character in sensor range and line of sight quickly flash reboots from the system level. This ends all effects caused by tech actions, stops NHP cascade, and the affected character becomes immune to all tech actions other than this one (hostile or allied) until the end of their next turn. Roll 1d6 for side effects. These effects take place immediately, don’t take an action or reaction, and any movement taken is involuntary.<br><b>1d6 Effect:</b><ul><li><b>1</b> Character becomes jammed until the end of their next turn</li><li><b>2</b> Character moves up to its speed in a direction of the GM’s choice</li><li><b>3</b> Character immediately moves up to 3 spaces towards the nearest character (allied or hostile) and takes the improvised attack action against that character. If no characters are in range, it only moves.</li><li><b>4</b> Character falls prone and takes 2 kinetic damage</li><li><b>5</b> Character vents 1d6 heat and deals the amount cooled as energy damage to all adjacent characters</li><li><b>6</b> Character immediately takes the stabilize action and can choose what to do.</li></ul>"
     },
-    "description": "When the problem exists between a chassis and its pilot, the only thing to do is fix it for them. This rather quick solution is an old system level reboot program, often used by asteroid miners dealing with aging hardware.",
+    "description": "When the problem exists between chair and chassis, aggressive solutions are needed. This rather quick solution is an old system level reboot program, often used by asteroid miners dealing with aging hardware.",
     "data_type": "system",
     "aptitude": {}
   },
   {
     "id": "ms_omnibus_plate",
-    "name": "Omnibus Plate",
+    "name": "OMNIBUS PLATE",
     "type": "Deployable",
-    "sp": 2,
+    "sp": 1,
     "tags": [
       {
         "id": "tg_quick_action"
       },
       {
         "id": "tg_limited",
-        "val": 3
+        "val": 2
       },
       {
         "id": "tg_unique"
@@ -326,9 +329,9 @@
   },
   {
     "id": "ms_field_approved_brass_ignorant_modifications",
-    "name": "Field-Approved, Brass-Ignorant Modifications",
+    "name": "FIELD-APPROVED, BRASS-IGNORANT MODIFICATIONS",
     "type": "Tech",
-    "sp": 2,
+    "sp": 3,
     "tags": [
       {
         "id": "tg_quick_tech"
@@ -343,15 +346,15 @@
     "effect": {
       "effect_type": "Tech",
       "activation": "Quick",
-      "detail": "Choose an allied mech character in sensor range and line of sight. That ally takes 1 heat and their next ranged weapon attack gains Overkill, AP, and deals +1d6 bonus damage, but the weapon cannot be fired next round as it become massively hot."
+      "detail": "Choose an allied mech character in sensor range and line of sight. That ally takes 1 heat and their next ranged weapon attack gains Overkill, ap, and deals +1d6 bonus damage, but the weapon cannot be fired until that character takes the stabilize action."
     },
-    "description": "FABI modifications are, as implied by the name, battlefield modifications made on any weapon system by engineers that, while <i>technically</i> falling well outside the approved envelope of functionality and safety, are nonetheless popular among veteran pilots. FABI mods tend to be temporary in nature: removal of joule governors via quick-patched code, field-cooked “hot” kinetic rounds, and so on.",
+    "description": "FABI modifications are, as implied by the name, battlefield modifications made on any weapon system by engineers that, while technically falling well outside the approved envelope of functionality and safety, are nonetheless popular among veteran pilots. FABI mods tend to be temporary in nature: removal of joule governors via quick-patched code, field-cooked “hot” kinetic rounds, and so on.",
     "data_type": "system",
     "aptitude": {}
   },
   {
-    "id": "ms_warchild_2_subalterns",
-    "name": "WARCHILD-2 Subalterns",
+    "id": "ms_forge_2_subaltern_squad",
+    "name": "FORGE-2 SUBALTERN SQUAD",
     "type": "Drone",
     "sp": 4,
     "tags": [
@@ -367,6 +370,9 @@
       },
       {
         "id": "tg_drone"
+      },
+      {
+        "id": "tg_deployable"
       }
     ],
     "source": "IPS-N",
@@ -374,29 +380,44 @@
     "license_level": 3,
     "effect": {
       "effect_type": "Drone",
-      "size": 1,
-      "hp": 6,
-      "edef": 10,
-      "evasion": 10,
-      "heat": 6,
-      "detail": "On activation, spend a charge and create a squad of WARCHILD-2 combat subalterns in a free adjacent space. The squad is made up of three armed, humanoid drones that follow direct commands issued by their commander. They are treated as a single unit, sharing the same space and move as a unit (even if moved involuntarily). The members are size 1/2 for movement, engagement, etc...<br>WARCHILD-2 subaltern subaltern squads cannot take actions, reactions, or movement normally. WC-2 subalterns’ max HP cannot be increased other than combining (see below) but they can benefit from armor, resistance, cover, etc or other effects. If they overheat, they are stunned until the end of their next turn and then clear all heat.",
+      "detail": "As a quick action 1/round, you can spend a charge to deploy your team of Forge-2 subalterns to start work on a project in a free space in range 5 and line of sight. The team is untargetable and not treated as a separate entity, but the project is an immovable single size 1 deployable object with 5 HP. The project takes until the start of your next turn to complete, and is canceled if it’s destroyed. When finished it gains +10 max and current hp. The team returns to you if the project is destroyed, canceled, or finished, no matter where you are.<br>Overcharging to use this system again ignores the 1/round limit, but the second project must be placed adjacent to the first. The team will finish both if given the chance.",
       "abilities": [{
-        "effect_type": "Basic",
-        "activation": "Quick",
-        "detail": "When activated, and as a quick action on your turn, you can instruct all WARCHILD-2 squads to move up to 4 spaces in a direction of your choice as long as they are in your sensor range and you are not jammed."
+        "effect_type": "Deployable",
+        "size": 1,
+        "hp": 15,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "<b>Emplacement</b><br>The team creates an elevated emplacement. The emplacement is size 1 and 3 spaces high and can fit characters up to a combined size of 1. Only the top space can be occupied by characters (the other two are a solid platform) but it can be entered through any space. Characters must spend a quick action to enter or exit from any adjacent space. Once a character enters, they are moved to inside the top space, which has firing slits that grant mutual line of sight but also grants characters inside hard cover from all directions. Characters and deployables can freely stand on the roof of the structure, which is flat, but don’t gain cover."
       }, {
-        "effect_type": "Basic",
-        "activation": "Quick",
-        "detail": "On each turn as a single quick action, you can issue all active subaltern squads one of the following issued commands (just a quick action, no matter how many squads are active). You can choose different commands for each squad if you have multiple active. The subalterns must be in your sensor range and you must not be jammed for them to receive commands. If the squads don’t receive a command, they take the Form Up command.<ul><li><b>Attack:</b> The WARCHILD-2 squad makes a ranged attack roll against a target in range 5 and line of sight, using your grit. On hit, they deal kinetic damage equal to half their hp.</li><li><b>Defend:</b> WARCHILD-2 subalterns may latch on to an adjacent allied mech or drone character, then disarticulate to form a new layer of armor. Squads that do this are destroyed, but that character gains overshield equal to the squad’s HP.</li><li><b>Form Up:</b> The WARCHILD-2 subalterns gain resistance to all damage and lock shields. Until they receive another order, they cannot move, become immune to involuntary movement, obstruct movement for size 1 characters or smaller, and grant hard cover to allied characters.</li><li><b>Combine:</b> WARCHILD-2 squads may combine with any other adjacent squads, combining their current and max hp and heat cap to a maximum of 10. They retain any heat and conditions from either squad. You can choose which squad’s location is the final location for the newly formed squad.</li></ul>"
+        "effect_type": "Deployable",
+        "size": 1,
+        "hp": 15,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "<b>Snare Foam</b><br>Once finished, this project creates a burst 2 area of difficult terrain. Destroying this project removes the difficult terrain."
+      }, {
+        "effect_type": "Deployable",
+        "size": 1,
+        "hp": 15,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "<b>Damping Station</b><br>The team creates a repair station. Once built, the station creates a burst 1 area around it, granting immunity to burn to any allied characters within, and clearing any burn currently affecting those characters."
+      }, {
+        "effect_type": "Deployable",
+        "size": 1,
+        "hp": 15,
+        "edef": 10,
+        "evasion": 10,
+        "detail": "<b>Armor Pack</b><br>This pack latches on and fuses to the next allied character to move adjacent to its space, destroying this project but giving them 1 armor for the rest of the scene."
       }]
     },
-    "description": "The WARCHILD line of subalterns are IPS-N’s premier frontline autonomous robotic humanoids. Produced by their robotics division, Northstar Branch Robotics, WARCHILD-2 subalterns are the newest of NBR’s combat models, built to user scale and function. Armored with heavy k-padding and energy dispersal ceramics, WARCHILD-2 units stand a little over 2.5 meters tall and are rated for high-impact/trade combat; these subalterns can interact with any weapon system usable by humans via their stock manipulators, and can be upgraded to manipulate fine-motor interfaces with near-1:1 fidelity function via specialization packs. Further hardening to their core processing units and tightbeam connectivity nets insulate WARCHILD-2 subalterns against causal and paracausal agents, ensuring unit loyalty and functionality against a wide spectrum of known and unknowable threats.",
+    "description": "The FORGE line of subalterns are IPS-N’s premier frontline autonomous robotic humanoids. Produced by their robotics division, Northstar Branch Robotics, FORGE-2 subalterns are the newest of NBR’s combat engineering models, built to user scale and function.",
     "data_type": "system",
     "aptitude": {}
   },
   {
     "id": "ms_smokestack_heatsink",
-    "name": "SMOKESTACK Heatsink",
+    "name": "SMOKESTACK HEATSINK",
     "type": "Deployable",
     "sp": 3,
     "tags": [
@@ -424,10 +445,10 @@
       "size": 0.5,
       "hp": 5,
       "evasion": 10,
-      "heat": 10,
-      "detail": "When deployed as a quick action, this deployable creates a burst 2 zone around itself, absorbing any heat added to any characters at least partially in the area from any source (before reduction, such as resistance). Once the pylon hits 10 heat, it explodes. Characters caught in the zone must pass an agility save or take 2d6 AP energy damage, or half on a successful save. Objects and deployables are hit automatically. Any excess heat absorbed by the pylon as part of the same action or effect that caused it to explode disperses and has no effect."
+      "heat": 6,
+      "detail": "When deployed as a quick action, this deployable creates a burst 2 zone around itself, absorbing any heat added to any characters at least partially in the area from any source (before reduction, such as resistance). Once the pylon hits 6 heat, it explodes. Characters caught in the zone must pass an agility save or take 1d6+3 ap energy damage, or half on a successful save. Objects and deployables are hit automatically. Any excess heat absorbed by the pylon as part of the same action or effect that caused it to explode disperses and has no effect."
     },
-    "description": "The IPS-N Kidd’s SMOKESTACK Heatsink represent the latest in IPS-N’s heat dispersion systems for chassis and other CORE-powered vehicles and vessels. Utilizing proprietary axiomatics, the SMOKESTACK system establishes (via deployable pylon) a localized, minor, and stable pinhole into an Omega state, allowing users to — for a certain value of thermodynamic exchange — cool excess heat debt via depositing it <i>into</i> that Omega State. Once the SMOKESTACK reaches capacity — a hard-coded feature — it detonates, making the system just as effective a weapon as it is a heat sink.",
+    "description": "The IPS-N Kidd’s SMOKESTACK Heatsink represent the latest in IPS-N’s heat dispersion systems for chassis and other CORE-powered vehicles and vessels. Utilizing proprietary axiomatics, the SMOKESTACK system establishes (via deployable pylon) a localized, minor, and stable pinhole into an Omega state, allowing users to — for a certain value of thermodynamic exchange — cool excess heat debt via depositing it into that Omega State. Once the SMOKESTACK reaches capacity — a hard-coded feature — it detonates, making the system just as effective a weapon as it is a heat sink.",
     "data_type": "system",
     "aptitude": {}
   }

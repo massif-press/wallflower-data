@@ -196,7 +196,7 @@
     "effect": {
       "effect_type": "Offensive",
       "hit": "Weapons and systems with the Drone, Seeking, and Nexus tags gain +1 accuracy to attack the target until the end of its next turn.",
-      "critical": "The target also gains lock on."
+      "critical": "The target also gains Lock On."
     },
     "description": "“Who tipped me the black spot the day we landed and began this dance?”",
     "data_type": "weapon",
