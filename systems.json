@@ -331,7 +331,7 @@
     "id": "ms_field_approved_brass_ignorant_modifications",
     "name": "FIELD-APPROVED, BRASS-IGNORANT MODIFICATIONS",
     "type": "Tech",
-    "sp": 3,
+    "sp": 2,
     "tags": [
       {
         "id": "tg_quick_tech"
@@ -346,7 +346,7 @@
     "effect": {
       "effect_type": "Tech",
       "activation": "Quick",
-      "detail": "Choose an allied mech character in sensor range and line of sight. That ally takes 1 heat and their next ranged weapon attack gains Overkill, ap, and deals +1d6 bonus damage, but the weapon cannot be fired until that character takes the stabilize action."
+      "detail": "Choose an allied mech character in sensor range and line of sight. That ally’s weapons become powered up. When that ally makes an attack roll, the attack’s damage cannot be reduced in any way, the kick from firing the weapon knocks the ally back in 1 direction after attacking, and on hit the target must additionally pass a hull save or be knocked prone. This effect ends when the targeted ally hits with an attack roll or at the end of the scene."
     },
     "description": "FABI modifications are, as implied by the name, battlefield modifications made on any weapon system by engineers that, while technically falling well outside the approved envelope of functionality and safety, are nonetheless popular among veteran pilots. FABI mods tend to be temporary in nature: removal of joule governors via quick-patched code, field-cooked “hot” kinetic rounds, and so on.",
     "data_type": "system",
@@ -383,6 +383,7 @@
       "detail": "As a quick action 1/round, you can spend a charge to deploy your team of Forge-2 subalterns to start work on a project in a free space in range 5 and line of sight. The team is untargetable and not treated as a separate entity, but the project is an immovable single size 1 deployable object with 5 HP. The project takes until the start of your next turn to complete, and is canceled if it’s destroyed. When finished it gains +10 max and current hp. The team returns to you if the project is destroyed, canceled, or finished, no matter where you are.<br>Overcharging to use this system again ignores the 1/round limit, but the second project must be placed adjacent to the first. The team will finish both if given the chance.",
       "abilities": [{
         "effect_type": "Deployable",
+        "count": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
@@ -390,6 +391,7 @@
         "detail": "<b>Emplacement</b><br>The team creates an elevated emplacement. The emplacement is size 1 and 3 spaces high and can fit characters up to a combined size of 1. Only the top space can be occupied by characters (the other two are a solid platform) but it can be entered through any space. Characters must spend a quick action to enter or exit from any adjacent space. Once a character enters, they are moved to inside the top space, which has firing slits that grant mutual line of sight but also grants characters inside hard cover from all directions. Characters and deployables can freely stand on the roof of the structure, which is flat, but don’t gain cover."
       }, {
         "effect_type": "Deployable",
+        "count": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
@@ -397,6 +399,7 @@
         "detail": "<b>Snare Foam</b><br>Once finished, this project creates a burst 2 area of difficult terrain. Destroying this project removes the difficult terrain."
       }, {
         "effect_type": "Deployable",
+        "count": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
@@ -404,6 +407,7 @@
         "detail": "<b>Damping Station</b><br>The team creates a repair station. Once built, the station creates a burst 1 area around it, granting immunity to burn to any allied characters within, and clearing any burn currently affecting those characters."
       }, {
         "effect_type": "Deployable",
+        "count": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
@@ -445,6 +449,7 @@
       "size": 0.5,
       "hp": 5,
       "evasion": 10,
+      "edef": 10,
       "heat": 6,
       "detail": "When deployed as a quick action, this deployable creates a burst 2 zone around itself, absorbing any heat added to any characters at least partially in the area from any source (before reduction, such as resistance). Once the pylon hits 6 heat, it explodes. Characters caught in the zone must pass an agility save or take 1d6+3 ap energy damage, or half on a successful save. Objects and deployables are hit automatically. Any excess heat absorbed by the pylon as part of the same action or effect that caused it to explode disperses and has no effect."
     },

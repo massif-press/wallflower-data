@@ -129,7 +129,7 @@
       "Support"
     ],
     "y_pos": 25,
-    "description": "Sidegraded from IPS-N’s Lancaster support frame, the Kidd was produced under a joint development contract by IPS-N’s Titan-Enceladus Field Project and Northstar Branch Robotics. The original frame pattern was bought off a mining commune that had rigged their support drones in a slapdash but ingenious neural mesh that both hardened them against tech intrusion and increased their operational efficiency many times over. Urban legend was that the original rig builder had used his drone team to bury caches of black market volador tech in several wandering asteroids, and out of extreme paranoia made his systems almost impossible to crack. To this day Northstar Robotics tries valiantly to squash down persistent rumors that clues to the location of the caches are hidden in the Kidd’s code base.<br>Designed to provide an aggressive, all-theater support solution to rugged field teams in hostile environments, the Kidd mounts a trio of powerful systems to ensure a broad operational envelope. The Jolly Roger semi-autonomous personal orbital platform, bundled with all proven-license Kidd platforms establishes theater control in any open or near-surface environment. A squadron of bundled WARCHILD subalterns (and onboard maintenance suite) guarantee friendly support in any environment, and provide a broad suite of tactical possibility. Finally, Titan-Enceladus’ SMOKESTACK heat sink pylon represents the cutting edge of IPS-N’s thermodynamic axiomatics, allowing users to offset an amount of heat via the creation of a pinhole-window into an Omega State of absolute zero.",
+    "description": "Sidegraded from IPS-N’s Lancaster support frame, the Kidd was produced under a joint development contract by IPS-N’s Titan-Enceladus Field Project and Northstar Branch Robotics. The original frame pattern was bought off a mining commune that had rigged their support drones in a slapdash but ingenious neural mesh that both hardened them against tech intrusion and increased their operational efficiency many times over. Urban legend was that the original rig builder had used his drone team to bury caches of black market volador tech in several wandering asteroids, and out of extreme paranoia made his systems almost impossible to crack. To this day Northstar Robotics tries valiantly to squash down persistent rumors that clues to the location of the caches are hidden in the Kidd’s code base.<br>Designed to provide an aggressive, all-theater support solution to rugged field teams in hostile environments, the Kidd mounts a trio of powerful systems to ensure a broad operational envelope. The Jolly Roger semi-autonomous personal orbital platform, bundled with all proven-license Kidd platforms establishes theater control in any open or near-surface environment. A squadron of bundled WARCHILD subalterns (and onboard maintenance suite) guarantee friendly support in any environment, and provide a broad suite of tactical possibility. Finally, Titan-Enceladus’ SMOKESTACK heat sink pylon represents the cutting edge of IPS-N’s thermodynamic axiomatics, allowing users to offset an amount of heat via the creation of a pinhole-window into an Omega State of absolute zero.<br>The Kidd is in high use in Evergreen as a subaltern command platform, mostly as a civilian and engineering mech. Its familiar bulk is also commonly seen accompanying traders that do business with the gray towns.",
     "mounts": [
       "Main"
     ],
@@ -173,5 +173,225 @@
     "data_type": "frame",
     "aptitude": {},
     "image_url": "https://i.imgur.com/gUtbLrv.png"
+  },
+  {
+    "id": "mf_sagarmatha",
+    "source": "GMS",
+    "name": "SAGARMATHA",
+    "mechtype": [
+      "Defender"
+    ],
+    "y_pos": 25,
+    "description": "The Sagarmartha is a size 2 legacy GMS mech that can be chosen by any character from LL0 onwards. Taking the Sagarmartha is not exclusive with the Everest, and all characters have access to it from LL0.<br>The Sagarmartha is an older pattern mech than the Everest, sturdy and bulkier by necessity more than design. It seen as somewhat antiquated by modern manufacturing standards. Nevertheless, it sees some use in border colonies, in the Baronies, and with the Albatross.",
+    "mounts": [
+      "Main",
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "armor": 1,
+      "hp": 8,
+      "evasion": 8,
+      "edef": 8,
+      "heatcap": 6,
+      "repcap": 5,
+      "sensor_range": 10,
+      "tech_attack": 0,
+      "save": 10,
+      "speed": 3,
+      "sp": 6
+    },
+    "traits": [
+      {
+        "name": "Guardian",
+        "description": "Adjacent allied characters can use the Sagarmartha as hard cover."
+      },
+      {
+        "name": "Heroism",
+        "description": "1/scene the Sagarmartha can brace without sacrificing any actions or movement on its following turn."
+      },
+      {
+        "name": "Replaceable Parts",
+        "description": "While resting, the Sagarmartha can be repaired at a rate of 1 repair per structure damage instead of 2."
+      }
+    ],
+    "core_system": {
+      "name": "Rallying Cry",
+      "description": "",
+      "active_name": "Raise the Banner",
+      "active_effect": "You raise a rallying banner. All characters in line of sight of your mech when it’s raised gain resistance to all damage and +1 accuracy on attacks, checks, and saves until the start of your next turn.",
+      "tags": [{
+        "id": "tg_quick_action"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://i.imgur.com/4Os1ZCY.png"
+  },
+  {
+    "id": "mf_tokugawa_alt_enkidu",
+    "source": "HA",
+    "name": "ENKIDU SHOCK BERSERKER",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 25,
+    "description": "The Enkidu can be taken at Tokugawa License level 2 instead of the base frame, or retrofitted as part of the campaign.<br>This experimental frame was a TBK chassis built as a black site project for late-action combat in the Hercynian Crisis. Deployed in limited numbers against the remaining Egregorian hives in the brutal last stages of the war, the Enkidu’s neurological interfacing was dangerous: raw and unshielded. The power and aggression flowing through the subroutines that govern the mech bled into a pilot’s subjectivity, making them lose themselves in a storm of violence, pushing themselves to greater acts of savagery. The result was incredibly hard for pilots to handle, the fallout rate from the program was extremely high, and the survivors required extensive conditioning, implants, and a cocktail of neurological suppressants to continue piloting.<br>The aim of the project was not to fight Egregorians, but which were in the final stages of practical extinction, but to use the battlefield as a testing ground for the Enkidu’s eventual deployment against ThirdComm revolutionaries and dissidents. Though the codebase for the Enkidu was eventually discontinued and molded into what is now the Tokugawa, the desperate project never got off the ground before the revolution took hold, and the remaining prototypes were buried with the rest of Hercynia’s history.",
+    "mounts": [
+      "Flex",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 2,
+      "armor": 0,
+      "hp": 10,
+      "evasion": 10,
+      "edef": 6,
+      "heatcap": 8,
+      "repcap": 3,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 4,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Demon Grasp",
+        "description": "The Enkidu can used the Improvised Attack action for Overwatch instead of Skirmish."
+      },
+      {
+        "name": "Hellhammer",
+        "description": "If a prone character adjacent to the Enkidu clears the prone condition by standing up, the Enkidu may immediately take the Improvised Attack action against that character as a reaction. The Enkidu can take this reaction any number of times a round."
+      },
+      {
+        "name": "Brute Strength",
+        "description": "The Enkidu gets +1 accuracy on hull checks and saves."
+      }
+    ],
+    "core_system": {
+      "name": "Limit Restriction Zero",
+      "description": "“I argue that it is Man who is shapeless; far from immutable, he is given form by the environment around him. In civilization, man is as divine as old God, who judges and creates; he is clothed in finery, and enjoys literature, art, company, and purpose.<br>When left alone in the savage wilderness of nature, Man comports himself accordingly.”<br>— Harrison II, “Mandate, Vol II: On Nature, On Savagery, On Reason”",
+      "passive_name": "Heartrend",
+      "passive_effect": "While in the danger zone:<ul><li>The Enkidu’s improvised attacks deal energy damage, gain +1 threat, and count as a heavy melee weapon attack for the purposes of systems and talents, etc.</li><li>On critical hit: The Enkidu’s Improvised Attack actions deal +1d6 bonus damage and knock their target prone.</li></ul>",
+      "active_name": "Bifurcate",
+      "active_effect": "To use this action, the Enkidu must be in the danger zone and it must have core power.<br>The Enkidu engages its monstrous strength, targets an adjacent character and attempts to tear it in half. If the character has 7 HP or less, only 1 structure remaining, and isn’t immune to damage, it is immediately destroyed, the action cost of this ability is refunded, and the enkidu can take the boost action as a free action.<br>If this ability fails to destroy the target, the target takes 1 kinetic damage.<br>Activating this ability does not spend CP, but at the end of any scene in which the Enkidu destroyed at least one character with this ability, it loses any CP it has.",
+      "tags": [{
+        "id": "tg_full_action"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://i.imgur.com/4Os1ZCY.png"
+  },
+  {
+    "id": "mf_genghis_alt_worldkiller_genghis_mk_i",
+    "source": "HA",
+    "name": "“WORLDKILLER” GENGHIS MK I",
+    "mechtype": [
+      "Striker"
+    ],
+    "y_pos": 25,
+    "description": "This alternate Genghis can be taken at Genghis LL2 instead of the base frame or dug up and repaired as part of the campaign.<br>These old pattern Genghis mechs are buried all over Hercynia, in various states of disrepair and carnage. They are a grim reminder of the carnage that once took place here. Unlike the sleeker, slimmer framed Mk2, the Mk1 is much more brutal in its simplicity - mass produced, a crude weapon.",
+    "mounts": [
+      "Main",
+      "Main",
+      "Heavy"
+    ],
+    "stats": {
+      "size": 1,
+      "armor": 3,
+      "hp": 6,
+      "evasion": 6,
+      "edef": 8,
+      "heatcap": 8,
+      "repcap": 4,
+      "sensor_range": 5,
+      "tech_attack": -2,
+      "save": 10,
+      "speed": 3,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Insulated",
+        "description": "The Genghis has immunity to burn."
+      },
+      {
+        "name": "TBK Munitions",
+        "description": "The Genghis’s attacks ignore resistance to Burn and Heat."
+      }
+    ],
+    "core_system": {
+      "name": "JUGGERNAUT REACTOR",
+      "description": "Inside his great suit the fireman smiles. He is a salamander upon the world, belching flame, cleaning away history, and leaving a new land for the living.",
+      "passive_name": "JUGGERNAUT REACTOR",
+      "passive_effect": "While the Genghis is in the Danger Zone, it is surrounded in shimmering heat that interferes with targeting. All characters within a burst 2 area around it other than the Genghis cannot take reactions and characters within have soft cover.",
+      "active_name": "A PLEASURE TO BURN",
+      "active_effect": "For the rest of the scene, the Genghis is wreathed in coruscating heat. In addition to the passive effects above, the Genghis has resistance to kinetic damage while it’s active as munitions vaporize.<br>When the Genghis overheats while this effect is active, it releases a blast of heat in the area, melting the ground beneath it. Characters caught within must pass a hull save or take 2d6 energy damage and become immobilized until the end of their next turn. The area then becomes difficult terrain for the rest of the scene.",
+      "tags": [{
+        "id": "tg_protocol"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://i.imgur.com/4Os1ZCY.png"
+  },
+  {
+    "id": "mf_swallowtail_alt_swallowtail_ranger_variant",
+    "source": "SSC",
+    "name": "SWALLOWTAIL (RANGER VARIANT)",
+    "mechtype": [
+      "Support"
+    ],
+    "y_pos": 25,
+    "description": "This swallowtail variant is common among HUC ranger forces. It was adopted and reverse engineered from abandoned early SSC expeditions to survey the planet, back when the company learned of Hercynia almost two centuries ago. With no ability to print-replicate the mech, the rangers have painstakingly manfuctured and assembled each one, to high specifications. Unlike the sleek luxury of other SSC frames, this Swallowtail is a highly rugged affair. Each one has a suite of the marks of its previous owners - livery, battle paint, custom gear, camouflage, and weathering. They have been repaired and maintained for two generations and each one is precious to the United Cities.<br>This mech can be taken at Swallowtail LL2 instead of the base frame, or gained by aiding Dthall Ordo during the campaign.",
+    "mounts": [
+      "Flex",
+      "Main"
+    ],
+    "stats": {
+      "size": 1,
+      "armor": 0,
+      "hp": 6,
+      "evasion": 10,
+      "edef": 8,
+      "heatcap": 4,
+      "repcap": 5,
+      "sensor_range": 20,
+      "tech_attack": 1,
+      "save": 10,
+      "speed": 6,
+      "sp": 5
+    },
+    "traits": [
+      {
+        "name": "Scout Battlefield",
+        "description": "At the start of any combat, before the first round begins and before any characters or NPCs are placed on the battlefield, place up to 2 of the following on the battlefield in free spaces. Options can be chosen more than once. All placed objects or zones are naturally occuring terrain features for the battlefield, and you can work with the GM to decide what they represent. None can be placed within 4 spaces of each other: (1) A 2x2 zone that grant soft cover to characters at least partly inside and can be freely moved through. (2) A 2x2 zone that is difficult terrain. (3) A size 1 piece of hard cover."
+      },
+      {
+        "name": "Invigorating Scanners",
+        "description": "1/round when the Swallowtail inflicts Lock On, an allied character in its sensor range and line of sight can move up to its speed as a reaction."
+      },
+      {
+        "name": "Weathering",
+        "description": "The Swallowtail ignores difficult terrain."
+      }
+    ],
+    "core_system": {
+      "name": "Gaia Inheritance",
+      "description": "Without the ability to mass produce mechs, outnumbered, and outgunned, the rangers have had to rely on the legacy of Hercynia itself to protect them. Each swallowtail is an ingenious, fast moving suite of meshed software and gear, custom tweaked by hardened warriors over several generations - imperfect in a way that would make an SSC smith shiver. Each wear their own unique name, have their own unique ballad, and are recorded in the osteomemetics of the city.",
+      "passive_name": "Grounded",
+      "passive_effect": "When the swallowtail ends its turn inside a zone or area of terrain that grants soft cover, it becomes invisible until it exists that zone or area, makes an attack roll, forces a save, or takes any other hostile action that affects another character.",
+      "active_name": "Guerrilla Warfare",
+      "active_effect": "When this protocol is activated, the swallowtail shoots 3 burst 1 zones of smoke in range 5 and line of sight that grant soft cover to characters at least partly inside. The zones last until the rest of the scene.<br>For the rest of the scene, when the swallowtail or any of its allies in its sensor range end their turn in a zone that grants soft cover, they become invisible. This invisibility breaks if they leave the zone, take damage, make an attack roll, force a save, take a reaction, or take any other hostile action that affects another character.",
+      "tags": [{
+        "id": "tg_protocol"
+      }]
+    },
+    "data_type": "frame",
+    "aptitude": {},
+    "image_url": "https://i.imgur.com/4Os1ZCY.png"
   }
 ]
