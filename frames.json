@@ -253,17 +253,17 @@
       "sensor_range": 5,
       "tech_attack": -2,
       "save": 10,
-      "speed": 4,
+      "speed": 3,
       "sp": 5
     },
     "traits": [
       {
-        "name": "Demon Grasp",
-        "description": "The Enkidu can used the Improvised Attack action for Overwatch instead of Skirmish."
+        "name": "Primal Savagery",
+        "description": "When the Enkidu ends its turn in the Danger Zone, it rears up, extends its plasma talons, and enters the primal savagery state. This has the following effects: 1) It cannot take normal reactions, including overwatch. 2) Instead, the Enkidu must instead make an attack as a reaction with its plasma talons against any character (hostile or allied) that enters, exits or moves more than 1 space in its threat range. It can make this reaction 1/turn, but any number of times a round. 3) On hit, any character struck by the Enkidu’s plasma talons is immediately immobilized until the start of its next turn. 4) This state ends at the start of the Enkidu’s turn."
       },
       {
-        "name": "Hellhammer",
-        "description": "If a prone character adjacent to the Enkidu clears the prone condition by standing up, the Enkidu may immediately take the Improvised Attack action against that character as a reaction. The Enkidu can take this reaction any number of times a round."
+        "name": "All Fours",
+        "description": "While in the Danger Zone, the Enkidu cannot make ranged attacks but its base speed increases to 6."
       },
       {
         "name": "Brute Strength",
@@ -273,13 +273,14 @@
     "core_system": {
       "name": "Limit Restriction Zero",
       "description": "“I argue that it is Man who is shapeless; far from immutable, he is given form by the environment around him. In civilization, man is as divine as old God, who judges and creates; he is clothed in finery, and enjoys literature, art, company, and purpose.<br>When left alone in the savage wilderness of nature, Man comports himself accordingly.”<br>— Harrison II, “Mandate, Vol II: On Nature, On Savagery, On Reason”",
-      "passive_name": "Heartrend",
-      "passive_effect": "While in the danger zone:<ul><li>The Enkidu’s improvised attacks deal energy damage, gain +1 threat, and count as a heavy melee weapon attack for the purposes of systems and talents, etc.</li><li>On critical hit: The Enkidu’s Improvised Attack actions deal +1d6 bonus damage and knock their target prone.</li></ul>",
-      "active_name": "Bifurcate",
-      "active_effect": "To use this action, the Enkidu must be in the danger zone and it must have core power.<br>The Enkidu engages its monstrous strength, targets an adjacent character and attempts to tear it in half. If the character has 7 HP or less, only 1 structure remaining, and isn’t immune to damage, it is immediately destroyed, the action cost of this ability is refunded, and the enkidu can take the boost action as a free action.<br>If this ability fails to destroy the target, the target takes 1 kinetic damage.<br>Activating this ability does not spend CP, but at the end of any scene in which the Enkidu destroyed at least one character with this ability, it loses any CP it has.",
+      "active_name": "Crush Limiter",
+      "active_effect": "For the rest of the scene, the Enkidu gains the following action, which can only be used in the danger zone:<br><b>Bifurcate</b><br><b>Full Action, Danger Zone</b><br>The Enkidu engages its monstrous strength, targets an adjacent character and attempts to tear it in half with its talons. If the character has hp equal to 7 or less, only 1 structure remaining, and isn’t immune to damage, it is immediately destroyed, the action cost of this ability is refunded, and the Enkidu can take the boost action as a free action. If this ability fails to destroy the target, the target instead takes 1 kinetic damage.<br>If the Enkidu failed to destroy any character with this ability at the end of the scene, it’s CP cost is refunded.",
       "tags": [{
-        "id": "tg_full_action"
-      }]
+        "id": "tg_protocol"
+      }],
+      "integrated": {
+        "id": "mw_tokugawa_alt_enkidu_integrated"
+      }
     },
     "data_type": "frame",
     "aptitude": {},
