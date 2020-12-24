@@ -5,16 +5,16 @@
     "description": "<i>Your time on Hercynia has always been marked by a kind of… searching. A connection to the planet, to something alive there. At night, when it is quiet, you think you can hear it best: your name, or a whisper that speaks something deeper, in the voice of another.<br>You don’t feel any fear when you hear it; you feel complete.<br>Time to find the distant speaker.</i><br>Whether your character is born offworld and comes to Hercynia without knowledge of the Egregorians, Witness, or any of the planet’s history, or if you were born in Evergreen or one of the United Cities, your character can be an empath. An empath is a human that can not only register when Witness is being shared, but begin to understand it and, with some training, be able to add their own subjectivity to it.<br>Mere exposure to Hercynia is enough for a character to become an empath. Nobody is ‘born’ an empath - it is a learned process, not an inherited one. Though, like all skills, some people find it easier than others, anyone can potentially become one. Normally empaths bond with Egregorians - there are many examples of such in the United Cities. Rarely, empaths can form bonds with other humans - a process that is as rare and wondrous to Egregorians as it is to the humans undergoing it, and one that also suggests that a human extension of Witness may be possible or nascent.",
     "ranks": [
       {
-        "name": "AEGIS OF AWARENESS",
-        "description": "Gain 2 d6s and set them aside as your aegis of awareness pool. This pool refreshes to full when you take a full repair. 1/scene as a quick action, you can push out an aura of shared perception and Witness around your mech, creating an aegis of awareness, a burst 2 area that moves with it. The aegis lasts until the end of the scene, andwhile it's active gain the following reaction:<br><b>Sympathetic Warning</b><br>1/round, reaction<br><b>Triggers</b>: An allied character is damaged in your aegis of awareness,<br><b>Effect</b>: You may spend and roll a d6 from your pool, reducing the damage suffered by the amount on the die, then consuming the die."
+        "name": "FLASH OF INSIGHT",
+        "description": "Your ability to sense the subjectivists of others grants you an uncanny ability to predict your ally’s actions, guiding them with your influence.<br><b>Precognisance</b><br>Reaction, 1/scene<br><b>Trigger</b>: An allied character in line of sight makes a check, attack, or saving throw<br><b>Effect</b>: That character doesn’t roll, but instead gets a roll of 10."
       },
       {
         "name": "FORCE OF WILL",
-        "description": " Gain two more dice for your pool. When a friendly character in your aura makes a structure damage or overheating check, after you see their roll, you can spend a die from your aegis of awareness pool to allow them to re-roll the check. They must use the new result, even if it’s worse."
+        "description": "Once a scene when an allied character in line of sight makes a structure or overheating check, you can roll the check alongside that character’s player as if you were also that character. They may take either your result or theirs as the final result."
       },
       {
-        "name": "DISPERSAL",
-        "description": "Gain two more dice for your pool. If your Sympathetic Warning reaction reduces damage to 0, as part of the same reaction, you may deal automatic energy damage to all hostile characters within your aegis of awareness equal to the number on the die."
+        "name": "MIND MELD",
+        "description": "1/scene as a quick action, you may tap deep reserves of willpower to grant extraordinary awareness to an allied character in line of sight. Your mech is jammed immediately after using this action until the start of your following turn. You merge your perception almost wholly with the chosen character, who until the end of their next turn treats any attack roll, save, or check as if they had rolled a 10, instead of rolling the d20."
       }
     ]
   }
