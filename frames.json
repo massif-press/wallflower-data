@@ -301,7 +301,7 @@
       "Heavy"
     ],
     "stats": {
-      "size": 1,
+      "size": 2,
       "armor": 3,
       "hp": 6,
       "evasion": 6,
@@ -322,13 +322,17 @@
       {
         "name": "TBK Munitions",
         "description": "The Genghis’s attacks ignore resistance to Burn and Heat."
+      },
+      {
+        "name": "Weak Computer",
+        "description": "The Genghis has +1 Difficulty on all SYSTEMS saves and checks."
       }
     ],
     "core_system": {
       "name": "JUGGERNAUT REACTOR",
       "description": "Inside his great suit the fireman smiles. He is a salamander upon the world, belching flame, cleaning away history, and leaving a new land for the living.",
       "passive_name": "JUGGERNAUT REACTOR",
-      "passive_effect": "While the Genghis is in the Danger Zone, it is surrounded in shimmering heat that interferes with targeting. All characters within a burst 2 area around it other than the Genghis cannot take reactions and characters within have soft cover.",
+      "passive_effect": "While the Genghis is in the Danger Zone, it is surrounded in shimmering heat that interferes with targeting. All characters within a burst 1 area around it other than the Genghis cannot take reactions and characters within have soft cover.",
       "active_name": "A PLEASURE TO BURN",
       "active_effect": "For the rest of the scene, the Genghis is wreathed in coruscating heat. In addition to the passive effects above, the Genghis has resistance to kinetic damage while it’s active as munitions vaporize.<br>When the Genghis overheats while this effect is active, it releases a blast of heat in the area, melting the ground beneath it. Characters caught within must pass a hull save or take 2d6 energy damage and become immobilized until the end of their next turn. The area then becomes difficult terrain for the rest of the scene.",
       "tags": [{
