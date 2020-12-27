@@ -6,7 +6,7 @@
     "type": "Melee",
     "damage": [
       {
-        "type": "kinetic",
+        "type": "Kinetic",
         "val": "1d6"
       }
     ],
@@ -25,10 +25,13 @@
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 1,
-    "effect": {
-      "effect_type": "Offensive",
-      "hit": "1/round you may force a character struck by this weapon must make a hull save. On a failed save, both you and the target are immobilized. At the end of each of its turns, the target can repeat the save, freeing both of you on success. As a quick action on your turn, you can break this immobilization effect on both of you to whip your target away, knocking them back 4 spaces in any direction. Otherwise you both remain immobilized."
-    },
+    "on_hit": "1/round you may force a character struck by this weapon must make a hull save. On a failed save, both you and the target are immobilized. At the end of each of its turns, the target can repeat the save, freeing both of you on success. As a quick action on your turn, you can break this immobilization effect on both of you to whip your target away, knocking them back 4 spaces in any direction. Otherwise you both remain immobilized.",
+    "actions": [{
+      "name": "Ferrofluid Lance Fling",
+      "activation": "Quick",
+      "frequency": "1/round",
+      "detail": "Break this immobilization effect of the Ferrofluid Lance on both you and your target to whip your target away, knocking them back 4 spaces in any direction."
+    }],
     "description": "“To say we can pull this needle from ‘thin air’ is the best-fit phrase, but it’s not accurate. Not entirely. There’s no such thing as thin air, not in the way one means it when they use that phrase. ‘Agreeable Atomic Space’ — that’s what ‘thin air’ really is. A place where one could — if one could — coalesce utility from useless particulate mass with a thought. With a snap of our finger. Here, watch this —“",
     "data_type": "weapon",
     "aptitude": {}
@@ -38,12 +41,6 @@
     "name": "RETORT LOOP",
     "mount": "Heavy",
     "type": "Cannon",
-    "damage": [
-      {
-        "type": "kinetic",
-        "val": "3 + [charge x 1d6]"
-      }
-    ],
     "range": [
       {
         "type": "Range",
@@ -56,15 +53,60 @@
         "val": 3
       }
     ],
+    "profiles": [
+      {
+        "name": "0 Charges",
+        "on_attack": "When fired, the weapon deals an additional 1d6 kinetic damage per charge, up to a maximum of 3 charges. Once fired, the charges deplete to 0, hit or miss. They also deplete to 0 if you take structure or stress damage.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "3"
+          }
+        ]
+      },{
+        "name": "1 Charge",
+        "on_attack": "When fired, the weapon deals an additional 1d6 kinetic damage per charge, up to a maximum of 3 charges. Once fired, the charges deplete to 0, hit or miss. They also deplete to 0 if you take structure or stress damage.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "1d6+3"
+          }
+        ]
+      },{
+        "name": "2 Charges",
+        "on_attack": "When fired, the weapon deals an additional 1d6 kinetic damage per charge, up to a maximum of 3 charges. Once fired, the charges deplete to 0, hit or miss. They also deplete to 0 if you take structure or stress damage.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "2d6+3"
+          }
+        ]
+      },{
+        "name": "3 Charges",
+        "on_attack": "When fired, the weapon deals an additional 1d6 kinetic damage per charge, up to a maximum of 3 charges. Once fired, the charges deplete to 0, hit or miss. They also deplete to 0 if you take structure or stress damage.",
+        "damage": [
+          {
+            "type": "Kinetic",
+            "val": "3d6+3"
+          }
+        ],
+        "tags": [{
+          "id": "tg_knockback",
+          "val": 3
+        }]
+      }
+    ],
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Offensive",
-      "attack": "When fired, the weapon deals an additional 1d6 kinetic damage per charge, up to a maximum of 3 charges. Once fired, the charges deplete to 0, hit or miss. They also deplete to 0 if you take structure or stress damage.",
-      "detail": "This weapon picks up and stores damage taken by your mechs’ armor as a kinetic charge.<br>When you take damage from an source owned by a hostile character, you may choose to store a charge in this weapon.<br>If you have 3 charges, your mech is immobilized, but the weapon additionally gains knock back 3."
-    },
+    "effect": "This weapon picks up and stores damage taken by your mechs’ armor as a kinetic charge.<br>When you take damage from an source owned by a hostile character, you may choose to store a charge in this weapon.<br>If you have 3 charges, your mech is immobilized, but the weapon additionally gains knock back 3.",
     "description": "“Ultimately, I have to return to the core of what we made, the code we cracked when we finally figured out NO/EM. From a simple prompt, we created a terrible engine. I am more proud of what we did than anything I’ve ever worked on before, but it should never see the light of day. Working with Visual convinced me of this: it’s their job to translate our work to sales, and they could not. If the translator cannot understand the text... then who are they to re-write it? Who is the reader to attempt to access it? I conclude my summary with this: mothball the platform. There are less terrible paths we can walk.",
+    "counters": [{
+      "id": "ctr_mw_retort_loop",
+      "name": "Retort Loop",
+      "min": 0,
+      "max": 3
+    }],
     "data_type": "weapon",
     "aptitude": {}
   },
@@ -73,34 +115,32 @@
     "name": "BOLT NEXUS",
     "mount": "Main",
     "type": "Nexus",
-    "damage": [
-      {
-        "type": "energy",
-        "val": 1
-      }
-    ],
-    "range": [
-      {
-        "type": "Range",
-        "val": 10
-      }
-    ],
     "tags": [
       {
         "id": "tg_smart"
       }
     ],
-    "source": "SSC",
-    "license": "EMPEROR",
-    "license_level": 1,
-    "effect": {
-      "effect_type": "Offensive",
-      "hit": "Once this weapon hits a character, it gains the Target Acquired profile against that character only until you attack a new character with this weapon.",
-      "abilities": [{
-        "effect_type": "Profile",
+    "profiles": [
+      {
+        "name": "Default",
+        "on_hit": "Once this weapon hits a character, it gains the Target Acquired profile against that character only until you attack a new character with this weapon.",
+        "damage": [
+          {
+            "type": "Energy",
+            "val": 1
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": 10
+          }
+        ]
+      }, {
         "name": "Target Acquired",
+        "on_hit": "Once this weapon hits a character, it gains the Target Acquired profile against that character only until you attack a new character with this weapon.",
         "damage": [{
-          "type": "energy",
+          "type": "Energy",
           "val": 1
         }],
         "range": [{
@@ -116,8 +156,11 @@
             "val": 3
           }
         ]
-      }]
-    },
+      }
+    ],
+    "source": "SSC",
+    "license": "EMPEROR",
+    "license_level": 1,
     "description": "“But they denied him and hamstrung her. So their Lord brought down upon them destruction for their sin and made it equal/And he does not fear the consequences thereof.”<br>— Witnessed from the Cyrus 2.14 ferromemetic*<br>*EXMAT Note: crossref(TRUE): Quran, Surah 91:14-15 “ash-Shams” (pre-Meccan Reconstruction).",
     "data_type": "weapon",
     "aptitude": {}
@@ -127,41 +170,40 @@
     "name": "Marathon Arc Bow",
     "mount": "Main",
     "type": "Launcher",
-    "range": [
+    "profiles": [
       {
-        "type": "line",
-        "val": 10
-      }
-    ],
-    "damage": [
-      {
-        "type": "energy",
-        "val": "1d6"
-      }
-    ],
-    "effect": {
-      "effect_type": "Offensive",
-      "detail": "This weapon can be drawn back with a quick action to use the Drawn Back profile on its next attack. This effect is lost if you move for any reason.",
-      "abilities": [
-        {
-          "effect_type": "Offensive",
-          "attack": "Allied characters caught in the area are not attacked, but instead gain overshield +2. This special overshield does not replace the last one created, but rather increases it, up to a maximum of overshield 12 (if an ally has no overshield, they go to overshield 2)."
-        },
-        {
-          "effect_type": "Profile",
-          "name": "Drawn Back",
-          "damage": [{
-            "type": "energy",
+        "name": "Default",
+        "on_attack": "Allied characters caught in the area are not attacked, but instead gain overshield +2. This special overshield does not replace the last one created, but rather increases it, up to a maximum of overshield 12 (if an ally has no overshield, they go to overshield 2).",
+        "range": [
+          {
+            "type": "Line",
+            "val": 10
+          }
+        ],
+        "damage": [
+          {
+            "type": "Energy",
             "val": "1d6"
-          }],
-          "range": [{
-            "type": "line",
-            "val": 20
-          }],
-          "detail": "This weapon's overshield effect increases to +4."
-        }
-      ]
-    },
+          }
+        ]
+      }, {
+        "name": "Drawn Back",
+        "on_attack": "Allied characters caught in the area are not attacked, but instead gain overshield +4. This special overshield does not replace the last one created, but rather increases it, up to a maximum of overshield 12 (if an ally has no overshield, they go to overshield 4).",
+        "damage": [{
+          "type": "Energy",
+          "val": "1d6"
+        }],
+        "range": [{
+          "type": "Line",
+          "val": 20
+        }]
+      }
+    ],
+    "actions": [{
+      "name": "Draw Back",
+      "activation": "Quick",
+      "detail": "This weapon can be drawn back with a quick action to use the Drawn Back profile on its next attack. This effect is lost if you move for any reason."
+    }],
     "description": "“Directed Subjective Convergence Weapon, Pattern 3. Or as Visual calls it, the ‘Marathon Arc’. I suppose it is a better name. Imposing. Inaccurate but Visual has never been accurate. The Arc forces realignment along a superpositional plane, destabilizing targets without the correct pineal hash while imparting sympathetic lensing on those with the correct hash; a simple ‘weapon’ that emulates an Overmind’s corrective/imperative push.”",
     "tags": [{
       "id": "tg_ap"
@@ -175,7 +217,7 @@
     "sp": 1,
     "damage": [
       {
-        "type": "energy",
+        "type": "Energy",
         "val": "1d3+1"
       }
     ],
@@ -193,11 +235,8 @@
     "source": "IPS-N",
     "license": "KIDD",
     "license_level": 1,
-    "effect": {
-      "effect_type": "Offensive",
-      "hit": "Weapons and systems with the Drone, Seeking, and Nexus tags gain +1 accuracy to attack the target until the end of its next turn.",
-      "critical": "The target also gains Lock On."
-    },
+    "on_hit": "Weapons and systems with the Drone, Seeking, and Nexus tags gain +1 accuracy to attack the target until the end of its next turn.",
+    "on_crit": "The target also gains Lock On.",
     "description": "“Who tipped me the black spot the day we landed and began this dance?”",
     "data_type": "weapon",
     "aptitude": {}
@@ -209,18 +248,18 @@
     "type": "Melee",
     "range": [
       {
-        "type": "threat",
+        "type": "Threat",
         "val": 3
       }
     ],
     "damage": [
       {
-        "type": "energy",
+        "type": "Energy",
         "val": "1d3+1"
       }
     ],
     "effect": "",
-    "description": "These molten talons are long, whiplike plasma lashes that the Enkidu can extend or retract. They can only be used in the danger zone and have the following profile:",
+    "description": "These molten talons are long, whiplike plasma lashes that the Enkidu can extend or retract. They can only be used in the danger zone.",
     "tags": [{
       "id": "tg_ap"
     },{

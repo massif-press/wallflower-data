@@ -4,19 +4,13 @@
     "name": "PINNING SPIRE",
     "type": "System",
     "sp": 2,
-    "tags": [
-      {
-        "id": "tg_quick_action"
-      }
-    ],
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 1,
-    "effect": {
-      "effect_type": "Basic",
+    "actions": [{
       "activation": "Quick",
       "detail": "Your mech and one character in range 3 and line of sight are immobilized. On any subsequent turn, you can end this effect as a free action, or your target can end it by successfully hitting you with a ranged or melee attack or by passing a hull save as a quick action."
-    },
+    }],
     "description": "“We call it ‘demand-compliance tethering’. Though, that makes it sound as if they have a choice to resist.”",
     "data_type": "system",
     "aptitude": {}
@@ -27,9 +21,6 @@
     "type": "Shield",
     "sp": 2,
     "tags": [
-      {
-        "id": "tg_quick_action"
-      },
       {
         "id": "tg_overshield"
       },
@@ -44,11 +35,10 @@
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Basic",
+    "actions": [{
       "activation": "Quick",
       "detail": "You project a shield of resonant ferrofluid over an allied character in range 5. That character gains overshield 8, but any damage dealt to this overshield before reductions of any kind also deals kinetic damage to you as if the attacker had also damaged you, no matter how far away you are."
-    },
+    }],
     "description": "“Soon enough we realized that shaping weapons from molecules and particles wasn’t enough to justify the conical mag as a system worth platforming. We needed to find a way to make it... more. More visual, tactile, concrete, imposing, thrilling — we needed to sell the next step in realspace control! So with some tuning and, regrettably, input from Visual, we figured out how to define the White Witch: as the most terrifying, alien thing you’ve ever fucking seen.”",
     "data_type": "system",
     "aptitude": {}
@@ -67,21 +57,23 @@
       },
       {
         "id": "tg_shield"
-      },
-      {
-        "id": "tg_reaction"
       }
     ],
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Reaction",
+    "actions": [{
+      "name": "Prime Camus's Razor",
+      "activation": "Quick",
+      "detail": "Your mech is capable of projecting a spot magnetic force of incredible power. As a quick action, prime this system, allowing you to use the Camus's Razor reaction."
+    },{
       "name": "Camus's Razor",
+      "activation": "Reaction",
+      "frequency": "1/round",
       "init": "Your mech is capable of projecting a spot magnetic force of incredible power. You can prime this system as a quick action.",
       "trigger": "Once primed, once before the start of your next turn as a reaction when an ally within range 3 and line of sight of you is targeted by an attack or other effect that deals at least partly kinetic or explosive damage",
       "detail": "Before the attack is made you can cause the attack or effect to instead target your mech. This attack or effect transfers no matter if the original could hit you or not (such as a melee attack)."
-    },
+    }],
     "description": "“Manipulating the world around the platform doesn’t end at rearranging the natural/built environment. This was the line that many on the team were afraid to cross, the question we had all asked ourselves once we bracketed the platform: what happens when we apply it to a person? What does existence mean when it can be ended with a thought?”",
     "data_type": "system",
     "aptitude": {}
@@ -91,26 +83,19 @@
     "name": "FERROSPIKE BARRIER",
     "type": "Deployable",
     "sp": 2,
-    "tags": [
-      {
-        "id": "tg_full_action"
-      },
-      {
-        "id": "tg_deployable"
-      }
-    ],
     "source": "SSC",
     "license": "WHITE WITCH",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Deployable",
+    "deployables": [{
+      "name": "Ferrospike Barrier",
+      "type": "Deployable",
       "activation": "Full",
-      "count": 1,
+      "instances": 1,
       "size": 2,
       "hp": 20,
       "evasion": 5,
       "detail": "You project a size 2, 20 HP spray of liquid metal in a free adjacent space that rapidly hardens into wicked spines. The barrier is a solid object that can be used for hard cover by any character, and the first time in a round any character is knocked back into the barrier, that character takes 1d6 AP kinetic damage. You can only have one barrier deployed at a time, if a new one is deployed, the other dissolves."
-    },
+    }],
     "description": "“Again and again the meatheads over at Visual asked us to ‘help them sell’ the platform. What else could we do? We handed them a power that gods of death and war had coveted since Cain cracked a rock over Abel’s head, and they told us, ‘if we can’t see it, we can’t sell it.’ So we mucked around and made another diadematic little wonder for them, the F-Barrier. It’s brilliant. Of course it is. We’re Exotic Materials, brilliance is easy.”",
     "data_type": "system",
     "aptitude": {}
@@ -137,11 +122,10 @@
     "source": "SSC",
     "license": "EMPEROR",
     "license_level": 1,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
+    "actions": [{
+      "activation": "Quick Tech",
       "detail": "A hostile or allied character in sensor range and line of sight gains overshield 1. When this overshield is lost for any reason, that character releases an electric pulse in a burst 2 area around them. All hostile characters caught within (including the original character, if it was hostile), take 1 AP energy damage and must pass a engineering save or become impaired until the end of their next turn. A hostile character can pass an engineering save as a quick action on their turn to clear this shield."
-    },
+    }],
     "description": "“Our first door in was not, as we thought, from the subject’s neural mapping, but from an image of one of the igneomemetic samples returned by Perfect Execution during their deployment — Darius 1.11: The Golden Fulcrum. With it, we were able to crack the gestalt and begin to translate [Witness]; finding our way into the subject followed shortly thereafter.<br>“A curious note: both records used to reconstruct the Emperor’s subjective superstructure — the Darius and Cyrus memetics — include āyāt from the pre-Meccan Reconstruction Quran, likely from Crisis-era human-egregorian interaction.”",
     "data_type": "system",
     "aptitude": {}
@@ -153,20 +137,16 @@
     "sp": 2,
     "tags": [
       {
-        "id": "tg_quick_tech"
-      },
-      {
         "id": "tg_shield"
       }
     ],
     "source": "SSC",
     "license": "EMPEROR",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
+    "actions": [{
+      "activation": "Quick Tech",
       "detail": "An allied character in sensor range gains a Disruptive Charge until the start of your next turn. When a hostile character moves to a space within range 3 of that character, the charge sparks to that character, ending this effect. Characters that start their turns within range 3 of the charged character are unaffected until they move outside of that area and re-enter it. The character struck by the charge must pass an engineering save or take 1 AP energy damage, be knocked back 2 spaces, knocked prone, and shredded until the end of their next turn."
-    },
+    }],
     "description": "Darius was the door in; Cyrus was the map. Navigation through the subject’s parasubjective topography was proven on paper. Using a particularized human-nonhuman ontologic bridge, EXMAT was able to demonstrate gestalt manifestation in test pilots; with help, we can do what they do — and do it better.<br>The walls between us and what comes next fall down. The work continues.",
     "data_type": "system",
     "aptitude": {}
@@ -178,9 +158,6 @@
     "sp": 3,
     "tags": [
       {
-        "id": "tg_quick_tech"
-      },
-      {
         "id": "tg_overshield"
       },
       {
@@ -197,11 +174,10 @@
     "source": "SSC",
     "license": "EMPEROR",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
+    "actions": [{
+      "activation": "Quick Tech",
       "detail": "An allied character in sensor range and line of sight gains Overshield equal to your Grit + 4. While they have this Overshield, they are resistant to Heat inflicted by other characters."
-    },
+    }],
     "description": "“Be recorded in my book of Kings; live into forever and beyond.”<br>— translated gestalt from the Cyrus Omega ferromemetic, no pre-contact text associated; likely a subject-original imperative/corrective impulse.",
     "data_type": "system",
     "aptitude": {}
@@ -213,20 +189,16 @@
     "sp": 2,
     "tags": [
       {
-        "id": "tg_quick_action"
-      },
-      {
         "id": "tg_unique"
       }
     ],
     "source": "SSC",
     "license": "EMPEROR",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Basic",
+    "actions": [{
       "activation": "Quick",
       "detail": "Create a blast 2 area in range and line of sight that lasts until the end of the scene or until you take this action again. The first time each turn a hostile character in this area is hit by a ranged or melee attack, they release a discharge of energy. All hostile characters at least partly in the area, including the original character, take 1 AP energy damage."
-    },
+    }],
     "description": "“So where are you going? Is it not except a reminder to the worlds<br>For whoever wills among you to take a right course.”<br>— Witnessed from the Darius 4.8 igneomemetic*<br>*EXMAT Note: crossref(TRUE): Quran, Surah 81:26-28 “at-Takwir” (pre-Meccan Reconstruction)",
     "data_type": "system",
     "aptitude": {}
@@ -237,9 +209,6 @@
     "type": "Tech",
     "sp": 4,
     "tags": [
-      {
-        "id": "tg_quick_tech"
-      },
       {
         "id": "tg_overshield"
       },
@@ -257,11 +226,10 @@
     "source": "SSC",
     "license": "EMPEROR",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
+    "actions": [{
+      "activation": "Quick Tech",
       "detail": "An allied character in sensor range and line of sight gains overshield equal to your Grit +4. While they have this overshield, all their melee attacks gain the AP tag, and the first time each turn that they either hit with a melee attack or take damage from a hostile character, they release a burst 1 AOE centered on them. All hostile characters caught within take 1 AP Energy damage."
-    },
+    }],
     "description": "“VERILY we established HIS power on earth and We gave HIM the ways and means to all ends.”<br>— Witnessed from the Darius 5.10 igneomemetic*<br>*EXMAT Note: crossref(TRUE): Quran, Surah 18:84 “al-Khaf” (pre-Meccan Reconstruction). Fascinating that this should appear from the gestalt — human/egregorian interaction on Hercynia post-Crisis must have been quite developed for this (and previous) excerpts to be so deep-set. Encouraging signs for further development.",
     "data_type": "system",
     "aptitude": {}
@@ -273,20 +241,16 @@
     "sp": 2,
     "tags": [
       {
-        "id": "tg_quick_tech"
-      },
-      {
         "id": "tg_unique"
       }
     ],
     "source": "IPS-N",
     "license": "KIDD",
     "license_level": 1,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
-      "detail": "An allied mech character in sensor range and line of sight quickly flash reboots from the system level. This ends all effects caused by tech actions, stops NHP cascade, and the affected character becomes immune to all tech actions other than this one (hostile or allied) until the end of their next turn. Roll 1d6 for side effects. These effects take place immediately, don’t take an action or reaction, and any movement taken is involuntary.<br><b>1d6 Effect:</b><ul><li><b>1</b> Character becomes jammed until the end of their next turn</li><li><b>2</b> Character moves up to its speed in a direction of the GM’s choice</li><li><b>3</b> Character immediately moves up to 3 spaces towards the nearest character (allied or hostile) and takes the improvised attack action against that character. If no characters are in range, it only moves.</li><li><b>4</b> Character falls prone and takes 2 kinetic damage</li><li><b>5</b> Character vents 1d6 heat and deals the amount cooled as energy damage to all adjacent characters</li><li><b>6</b> Character immediately takes the stabilize action and can choose what to do.</li></ul>"
-    },
+    "actions": [{
+      "activation": "Quick Tech",
+      "detail": "<p>An allied mech character in sensor range and line of sight quickly flash reboots from the system level. This ends all effects caused by tech actions, stops NHP cascade, and the affected character becomes immune to all tech actions other than this one (hostile or allied) until the end of their next turn. Roll 1d6 for side effects. These effects take place immediately, don’t take an action or reaction, and any movement taken is involuntary.</p><p><b>1d6 Effect:</b></p><ol><li>Character becomes jammed until the end of their next turn</li><li>Character moves up to its speed in a direction of the GM’s choice</li><li>Character immediately moves up to 3 spaces towards the nearest character (allied or hostile) and takes the improvised attack action against that character. If no characters are in range, it only moves.</li><li>Character falls prone and takes 2 kinetic damage</li><li>Character vents 1d6 heat and deals the amount cooled as energy damage to all adjacent characters</li><li>Character immediately takes the stabilize action and can choose what to do.</li></ol>"
+    }],
     "description": "When the problem exists between chair and chassis, aggressive solutions are needed. This rather quick solution is an old system level reboot program, often used by asteroid miners dealing with aging hardware.",
     "data_type": "system",
     "aptitude": {}
@@ -298,31 +262,26 @@
     "sp": 1,
     "tags": [
       {
-        "id": "tg_quick_action"
-      },
-      {
         "id": "tg_limited",
         "val": 2
       },
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_deployable"
       }
     ],
     "source": "IPS-N",
     "license": "KIDD",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Deployable",
+    "deployables": [{
+      "name": "Omnibus Plate",
+      "type": "Deployable",
       "activation": "Quick",
-      "count": 1,
+      "instances": 1,
       "size": 1,
       "hp": 10,
       "evasion": 5,
       "detail": "On activation, creates a size 1 Omnibus Plate in range 5. The plate cannot be moved, is flat, and does not block movement. The plate can fit a single size 1 or smaller drone or deployable at a time. Drones or deployables placed inside gain resistance to all damage and increase the size of any burst or blast effects they generate by +1. Any of the drone or deployable’s effects that require adjacency can now be activated from within range 2."
-    },
+    }],
     "description": "Northstar Branch Robotics returned to their roots with the Omnibus Plate, creating a simple, deployable catalytic for frontline nexus users. Designed with adaptation in mind, Omnibus Plates can attach securely to any drone or deployable system, increasing that drone or deployable’s efficacy in all aspects of employ.",
     "data_type": "system",
     "aptitude": {}
@@ -334,20 +293,16 @@
     "sp": 2,
     "tags": [
       {
-        "id": "tg_quick_tech"
-      },
-      {
         "id": "tg_unique"
       }
     ],
     "source": "IPS-N",
     "license": "KIDD",
     "license_level": 2,
-    "effect": {
-      "effect_type": "Tech",
-      "activation": "Quick",
+    "actions": [{
+      "activation": "Quick Tech",
       "detail": "Choose an allied mech character in sensor range and line of sight. That ally’s weapons become powered up. When that ally makes an attack roll, the attack’s damage cannot be reduced in any way, the kick from firing the weapon knocks the ally back in 1 direction after attacking, and on hit the target must additionally pass a hull save or be knocked prone. This effect ends when the targeted ally hits with an attack roll or at the end of the scene."
-    },
+    }],
     "description": "FABI modifications are, as implied by the name, battlefield modifications made on any weapon system by engineers that, while technically falling well outside the approved envelope of functionality and safety, are nonetheless popular among veteran pilots. FABI mods tend to be temporary in nature: removal of joule governors via quick-patched code, field-cooked “hot” kinetic rounds, and so on.",
     "data_type": "system",
     "aptitude": {}
@@ -359,9 +314,6 @@
     "sp": 4,
     "tags": [
       {
-        "id": "tg_quick_action"
-      },
-      {
         "id": "tg_limited",
         "val": 6
       },
@@ -370,51 +322,52 @@
       },
       {
         "id": "tg_drone"
-      },
-      {
-        "id": "tg_deployable"
       }
     ],
     "source": "IPS-N",
     "license": "KIDD",
     "license_level": 3,
-    "effect": {
-      "effect_type": "Drone",
-      "detail": "As a quick action 1/round, you can spend a charge to deploy your team of Forge-2 subalterns to start work on a project in a free space in range 5 and line of sight. The team is untargetable and not treated as a separate entity, but the project is an immovable single size 1 deployable object with 5 HP. The project takes until the start of your next turn to complete, and is canceled if it’s destroyed. When finished it gains +10 max and current hp. The team returns to you if the project is destroyed, canceled, or finished, no matter where you are.<br>Overcharging to use this system again ignores the 1/round limit, but the second project must be placed adjacent to the first. The team will finish both if given the chance.",
-      "abilities": [{
-        "effect_type": "Deployable",
-        "count": 1,
+    "detail": "As a quick action 1/round, you can spend a charge to deploy your team of Forge-2 subalterns to start work on a project in a free space in range 5 and line of sight. The team is untargetable and not treated as a separate entity, but the project is an immovable single size 1 deployable object with 5 HP. The project takes until the start of your next turn to complete, and is canceled if it’s destroyed. When finished it gains +10 max and current hp. The team returns to you if the project is destroyed, canceled, or finished, no matter where you are.<br>Overcharging to use this system again ignores the 1/round limit, but the second project must be placed adjacent to the first. The team will finish both if given the chance.",
+    "deployables": [
+      {
+        "type": "Project",
+        "name": "Emplacement",
+        "instances": 1,
+        "cost": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
         "evasion": 10,
-        "detail": "<b>Emplacement</b><br>The team creates an elevated emplacement. The emplacement is size 1 and 3 spaces high and can fit characters up to a combined size of 1. Only the top space can be occupied by characters (the other two are a solid platform) but it can be entered through any space. Characters must spend a quick action to enter or exit from any adjacent space. Once a character enters, they are moved to inside the top space, which has firing slits that grant mutual line of sight but also grants characters inside hard cover from all directions. Characters and deployables can freely stand on the roof of the structure, which is flat, but don’t gain cover."
+        "detail": "The team creates an elevated emplacement. The emplacement is size 1 and 3 spaces high and can fit characters up to a combined size of 1. Only the top space can be occupied by characters (the other two are a solid platform) but it can be entered through any space. Characters must spend a quick action to enter or exit from any adjacent space. Once a character enters, they are moved to inside the top space, which has firing slits that grant mutual line of sight but also grants characters inside hard cover from all directions. Characters and deployables can freely stand on the roof of the structure, which is flat, but don’t gain cover."
       }, {
-        "effect_type": "Deployable",
-        "count": 1,
+        "type": "Project",
+        "name": "Snare Foam",
+        "instances": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
         "evasion": 10,
-        "detail": "<b>Snare Foam</b><br>Once finished, this project creates a burst 2 area of difficult terrain. Destroying this project removes the difficult terrain."
+        "detail": "Once finished, this project creates a burst 2 area of difficult terrain. Destroying this project removes the difficult terrain."
       }, {
-        "effect_type": "Deployable",
+        "type": "Project",
+        "name": "Damping Station",
         "count": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
         "evasion": 10,
-        "detail": "<b>Damping Station</b><br>The team creates a repair station. Once built, the station creates a burst 1 area around it, granting immunity to burn to any allied characters within, and clearing any burn currently affecting those characters."
+        "detail": "The team creates a repair station. Once built, the station creates a burst 1 area around it, granting immunity to burn to any allied characters within, and clearing any burn currently affecting those characters."
       }, {
-        "effect_type": "Deployable",
+        "type": "Project",
+        "name": "Armor Pack",
         "count": 1,
         "size": 1,
         "hp": 15,
         "edef": 10,
         "evasion": 10,
-        "detail": "<b>Armor Pack</b><br>This pack latches on and fuses to the next allied character to move adjacent to its space, destroying this project but giving them 1 armor for the rest of the scene."
-      }]
-    },
+        "detail": "This pack latches on and fuses to the next allied character to move adjacent to its space, destroying this project but giving them 1 armor for the rest of the scene."
+      }
+    ],
     "description": "The FORGE line of subalterns are IPS-N’s premier frontline autonomous robotic humanoids. Produced by their robotics division, Northstar Branch Robotics, FORGE-2 subalterns are the newest of NBR’s combat engineering models, built to user scale and function.",
     "data_type": "system",
     "aptitude": {}
@@ -426,33 +379,29 @@
     "sp": 3,
     "tags": [
       {
-        "id": "tg_quick_action"
-      },
-      {
         "id": "tg_limited",
         "val": 2
       },
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_deployable"
       }
     ],
     "source": "IPS-N",
     "license": "KIDD",
     "license_level": 3,
-    "effect": {
+    "deployables": [{
+      "name": "Smokestack Heatsink",
+      "type": "Deployable",
       "effect_type": "Deployable",
       "activation": "Quick",
-      "count": 1,
+      "instances": 1,
       "size": 0.5,
       "hp": 5,
       "evasion": 10,
       "edef": 10,
       "heat": 6,
       "detail": "When deployed as a quick action, this deployable creates a burst 2 zone around itself, absorbing any heat added to any characters at least partially in the area from any source (before reduction, such as resistance). Once the pylon hits 6 heat, it explodes. Characters caught in the zone must pass an agility save or take 1d6+3 ap energy damage, or half on a successful save. Objects and deployables are hit automatically. Any excess heat absorbed by the pylon as part of the same action or effect that caused it to explode disperses and has no effect."
-    },
+    }],
     "description": "The IPS-N Kidd’s SMOKESTACK Heatsink represent the latest in IPS-N’s heat dispersion systems for chassis and other CORE-powered vehicles and vessels. Utilizing proprietary axiomatics, the SMOKESTACK system establishes (via deployable pylon) a localized, minor, and stable pinhole into an Omega state, allowing users to — for a certain value of thermodynamic exchange — cool excess heat debt via depositing it into that Omega State. Once the SMOKESTACK reaches capacity — a hard-coded feature — it detonates, making the system just as effective a weapon as it is a heat sink.",
     "data_type": "system",
     "aptitude": {}
