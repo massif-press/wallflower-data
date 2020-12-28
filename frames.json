@@ -112,6 +112,10 @@
       {
         "name": "Storm Shield",
         "description": "The Emperor’s hp does not increase due to grit. Instead, at the start of any scene, the Emperor gains overshield equal to 6 + its grit. This overshield refreshes when the Emperor takes structure damage.",
+        "bonuses": [{
+          "id": "hp",
+          "val": "-{grit}"
+        }],
         "synergies": [{
           "locations": ["overshield"],
           "detail": "The Emperor’s hp does not increase due to grit. Instead, at the start of any scene, the Emperor gains overshield equal to 6 + its grit. This overshield refreshes when the Emperor takes structure damage."
@@ -129,7 +133,7 @@
         "name": "Sovereign Presence",
         "description": "1/round, when the Emperor hits or is hit by a melee or ranged attack, it can release a burst 1 AOE around itself (if it was hit) or its target (if it was the attacker) that deals 1 AP energy damage to all characters caught within other than the Emperor.",
         "synergies": [{
-          "locations": ["weapon", "hp"],
+          "locations": ["weapon", "active_effects"],
           "detail": "1/round, when the Emperor hits or is hit by a melee or ranged attack, it can release a burst 1 AOE around itself (if it was hit) or its target (if it was the attacker) that deals 1 AP energy damage to all characters caught within other than the Emperor."
         }]
       }
@@ -289,7 +293,7 @@
         "name": "Heroism",
         "description": "1/scene the Sagarmartha can brace without sacrificing any actions or movement on its following turn.",
         "synergies": [{
-          "locations": ["brace"],
+          "locations": ["active_effects"],
           "detail": "1/scene the Sagarmartha can brace without sacrificing any actions or movement on its following turn."
         }]
       },
