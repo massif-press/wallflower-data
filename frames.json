@@ -109,8 +109,11 @@
           "name": "Rapid Deploy",
           "activation": "Free",
           "frequency": "1/scene",
-          "detail": "On its first turn in any combat scene, the Kidd can deploy or activate any one system with the drone or deployable tag as a free action.",
-          "synergy_locations": ["deployable", "drone"]
+          "detail": "On its first turn in any combat scene, the Kidd can deploy or activate any one system with the drone or deployable tag as a free action."
+        }],
+        "synergies": [{
+          "locations": ["deployable", "drone"],
+          "detail": "On its first turn in any combat scene, the Kidd can deploy or activate any one system with the drone or deployable tag as a free action."
         }]
       },
       {
@@ -120,8 +123,7 @@
           "name": "Re-Route Power",
           "activation": "Quick",
           "frequency": "1/round",
-          "detail": "As a quick action 1/round, the Kidd can destroy one of its deployables or drones to either grant 1d6+3 overshield to an adjacent ally to that drone or system or deal 1d6+3 ap energy damage to an adjacent enemy to that drone or system. It can’t do this to a drone or deployable that was deployed or created in the same round. Systems without the limited tag destroyed this way must be repaired before becoming usable again.",
-          "synergy_locations": ["drone", "deployable"]
+          "detail": "As a quick action 1/round, the Kidd can destroy one of its deployables or drones to either grant 1d6+3 overshield to an adjacent ally to that drone or system or deal 1d6+3 ap energy damage to an adjacent enemy to that drone or system. It can’t do this to a drone or deployable that was deployed or created in the same round. Systems without the limited tag destroyed this way must be repaired before becoming usable again."
         }]
       },
       {
