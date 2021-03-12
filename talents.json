@@ -2,33 +2,33 @@
   {
     "id": "t_empath",
     "name": "EMPATH",
-    "description": "<p><i>Your time on Hercynia has always been marked by a kind of… searching. A connection to the planet, to something alive there. At night, when it is quiet, you think you can hear it best: your name, or a whisper that speaks something deeper, in the voice of another.</p><p>You don’t feel any fear when you hear it; you feel complete.</p><p>Time to find the distant speaker.</i></p><p>Whether your character is born offworld and comes to Hercynia without knowledge of the Egregorians, Witness, or any of the planet’s history, or if you were born in Evergreen or one of the United Cities, your character can be an empath. An empath is a human that can not only register when Witness is being shared, but begin to understand it and, with some training, be able to add their own subjectivity to it.</p><p>Mere exposure to Hercynia is enough for a character to become an empath. Nobody is ‘born’ an empath - it is a learned process, not an inherited one. Though, like all skills, some people find it easier than others, anyone can potentially become one. Normally empaths bond with Egregorians - there are many examples of such in the United Cities. Rarely, empaths can form bonds with other humans - a process that is as rare and wondrous to Egregorians as it is to the humans undergoing it, and one that also suggests that a human extension of Witness may be possible or nascent.</p>",
+    "description": "<p><i>Your time on Hercynia has always been marked by a kind of … searching. A connection to the planet, to something alive there. You can perceive it best at night, when it’s quiet: your name, or a whisper that speaks something deeper and more true, spoken in the voice of another. You don’t feel any fear when you hear it. You feel complete. It takes some time down the well, but one morning you awake resolute.</p><p>Time to find the distant speaker.</i></p><p>Whether your character was born offworld and came to Hercynia knowing nothing of the Egregorians, Witness, or any of the planet’s history, or you were born in Evergreen or one of the cities of the HUC, your character can be an empath. An empath is someone who can not only register when Witness is being shared, but begin to understand it and, with some training, even add their own subjectivity to it.</p><p>Mere exposure to Hercynia is enough for a character to become an empath. Nobody is “born” an empath – it is a learned process, not an inherited one. Although, like all skills, some people find it easier than others, anyone can potentially learn to understand Witness. Normally, human empaths bond with Egregorians – there are many examples of such in the United Cities. Rarely, empaths can form bonds with other humans – a process that is as rare and wondrous to Egregorians as it is to the humans undergoing it, and one that also suggests that a human extension of Witness may latent and possible with exploration.</p>",
     "ranks": [
       {
-        "name": "FLASH OF INSIGHT",
-        "description": "Your ability to sense the subjectivists of others grants you an uncanny ability to predict your ally’s actions, guiding them with your influence.",
+        "name": "SYMPATHETIC PRECOGNITION",
+        "description": "Your ability to sense the subjectivities of others grants you an uncanny ability to predict your ally’s actions, guiding them with your influence.",
         "actions": [
           {
-            "name": "Precognisance",
+            "name": "Sympathetic Precognition",
             "activation": "Reaction",
             "frequency": "1/scene",
-            "trigger": "An allied character in line of sight makes a check, attack, or saving throw.",
-            "detail": "That character doesn’t roll, but instead gets a roll of 10."
+            "trigger": "An allied character in line of sight makes a skill check, attack, or save.",
+            "detail": "That character may choose not to roll, instead treating their check, attack, or save as if they had rolled a 10 on the d20."
           }
         ]
       },
       {
-        "name": "FORCE OF WILL",
-        "description": "Once a scene when an allied character in line of sight makes a structure or overheating check, you can roll the check alongside that character’s player as if you were also that character. They may take either your result or theirs as the final result."
+        "name": "BEND TO WILL",
+        "description": "1/scene when an allied character in line of sight makes a structure or overheating check, they can roll twice and choose either result."
       },
       {
-        "name": "MIND MELD",
-        "description": "1/scene as a quick action, you may tap deep reserves of willpower to grant extraordinary awareness to an allied character in line of sight. Your mech is jammed immediately after using this action until the start of your following turn. You merge your perception almost wholly with the chosen character, who until the end of their next turn treats any attack roll, save, or check as if they had rolled a 10, instead of rolling the d20.",
+        "name": "SHARED SUBJECTIVITY",
+        "description": "1/scene as a quick action, you may tap deep reserves of willpower to grant extraordinary awareness to an allied character in line of sight. Your mech immediately becomes STUNNED until the start of your next turn and your perception almost completely merges with that of the other character. Until the end of their next turn, any time that character makes an attack, check, or saving throw, they can choose to roll as normal or instead treat that attack, check, or save as if they had rolled a 10 on the d20. They must decide before rolling.",
         "actions": [{
-          "name": "Mind Meld",
+          "name": "Shared Subjectivity",
           "activation": "Quick",
           "frequency": "1/scene",
-          "detail": "You may tap deep reserves of willpower to grant extraordinary awareness to an allied character in line of sight. Your mech is jammed immediately after using this action until the start of your following turn. You merge your perception almost wholly with the chosen character, who until the end of their next turn treats any attack roll, save, or check as if they had rolled a 10, instead of rolling the d20."
+          "detail": "Your mech immediately becomes STUNNED until the start of your next turn and your perception almost completely merges with that of the other character. Until the end of their next turn, any time that character makes an attack, check, or saving throw, they can choose to roll as normal or instead treat that attack, check, or save as if they had rolled a 10 on the d20. They must decide before rolling."
         }]
       }
     ]
