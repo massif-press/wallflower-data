@@ -1,50 +1,4 @@
 [{
-    "id": "mw_bolt_nexus",
-    "name": "BOLT NEXUS",
-    "mount": "Main",
-    "type": "Nexus",
-    "tags": [{
-      "id": "tg_smart"
-    }],
-    "profiles": [{
-      "name": "Default",
-      "on_hit": "Once this weapon hits a character, it gains the Target Acquired profile against that character only until you attack a new character with this weapon.",
-      "damage": [{
-        "type": "Energy",
-        "val": 1
-      }],
-      "range": [{
-        "type": "Range",
-        "val": 10
-      }]
-    }, {
-      "name": "Target Acquired",
-      "on_hit": "Once this weapon hits a character, it gains the Target Acquired profile against that character only until you attack a new character with this weapon.",
-      "damage": [{
-        "type": "Energy",
-        "val": 1
-      }],
-      "range": [{
-        "type": "Range",
-        "val": 20
-      }],
-      "tags": [{
-          "id": "tg_seeking"
-        },
-        {
-          "id": "tg_reliable",
-          "val": 3
-        }
-      ]
-    }],
-    "source": "SSC",
-    "license": "EMPEROR",
-    "license_level": 1,
-    "description": "“But they denied him and hamstrung her. So their Lord brought down upon them destruction for their sin and made it equal/And he does not fear the consequences thereof.”<br>— Witnessed from the Cyrus 2.14 ferromemetic*<br>*EXMAT Note: crossref(TRUE): Quran, Surah 91:14-15 “ash-Shams” (pre-Meccan Reconstruction).",
-    "data_type": "weapon",
-    "aptitude": {}
-  },
-  {
     "id": "mw_blackspot_targeting_laser",
     "name": "BLACKSPOT TARGETING LASER",
     "mount": "Main",
@@ -64,7 +18,7 @@
     "source": "IPS-N",
     "license": "KIDD",
     "license_level": 1,
-    "on_hit": "Weapons and systems with the Drone, Seeking, and Nexus weapons and systems gain +1 Accuracy to attack the target until the end of their next turn.",
+    "on_hit": "DRONE, SEEKING, and NEXUS weapons and systems gain +1 Accuracy to attack the target until the end of their next turn.",
     "on_crit": "The target also receives Lock On.",
     "description": "“Who tipped me the black spot the day we landed and began this dance?” – Treasure Island (1883)",
     "data_type": "weapon"
