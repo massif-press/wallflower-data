@@ -71,7 +71,7 @@
   {
     "id": "ms_forge_2_subaltern_squad",
     "name": "FORGE-2 SUBALTERN SQUAD",
-    "type": "Drone",
+    "type": "Deployable",
     "sp": 4,
     "tags": [{
         "id": "tg_limited",
@@ -79,9 +79,6 @@
       },
       {
         "id": "tg_unique"
-      },
-      {
-        "id": "tg_drone"
       }
     ],
     "source": "IPS-N",
