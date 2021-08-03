@@ -35,6 +35,8 @@
     "name": "Plasma Talons",
     "mount": "Auxiliary",
     "source": "HA",
+    "license": "TOKUGAWA",
+    "license_level": 1,
     "type": "Melee",
     "range": [
       {
