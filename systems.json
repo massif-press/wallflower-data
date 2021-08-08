@@ -101,6 +101,7 @@
       {
         "type": "Project",
         "name": "Emplacement",
+        "activation": "Quick",
         "instances": 1,
         "cost": 1,
         "size": 1,
@@ -110,6 +111,7 @@
       {
         "type": "Project",
         "name": "Snare Foam",
+        "activation": "Quick",
         "instances": 1,
         "cost": 1,
         "size": 1,
@@ -119,6 +121,7 @@
       {
         "type": "Project",
         "name": "Damping Station",
+        "activation": "Quick",
         "instances": 1,
         "cost": 1,
         "size": 1,
@@ -128,6 +131,7 @@
       {
         "type": "Project",
         "name": "Armor Pack",
+        "activation": "Quick",
         "instances": 1,
         "cost": 1,
         "size": 1,
@@ -185,6 +189,9 @@
       },
       {
         "id": "tg_unique"
+      },
+      {
+        "id": "tg_quick_action"
       }
     ],
     "source": "EXOTIC",
@@ -269,6 +276,7 @@
       {
         "name": "Markey’s Fusebox",
         "type": "Mine",
+        "activation": "Quick",
         "size": 0.5,
         "hp": 10,
         "edef": 5,
