@@ -326,6 +326,7 @@
       }
     ],
     "source": "EXOTIC",
+    "effect": "<p>1/scene, you may take one of the following Full Tech actions:</p>",
     "actions": [
       {
         "name": "Whisper of Cascade",
