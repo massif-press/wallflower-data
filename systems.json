@@ -24,7 +24,7 @@
   },
   {
     "id": "ms_omnibus_plate",
-    "name": "OMNIBUS PLATE",
+    "name": "Omnibus Plate",
     "type": "Deployable",
     "sp": 1,
     "tags": [
@@ -58,7 +58,7 @@
   },
   {
     "id": "ms_field_approved_brass_ignorant_modifications",
-    "name": "FIELD-APPROVED, BRASS-IGNORANT MODIFICATIONS",
+    "name": "Field-Approved, Brass Ignorant Modifications",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -81,7 +81,7 @@
   },
   {
     "id": "ms_forge_2_subaltern_squad",
-    "name": "FORGE-2 SUBALTERN SQUAD",
+    "name": "FORGE-2 Subaltern Squad",
     "type": "Deployable",
     "sp": 4,
     "tags": [
@@ -145,7 +145,7 @@
   },
   {
     "id": "ms_smokestack_heatsink",
-    "name": "SMOKESTACK HEATSINK",
+    "name": "SMOKESTACK Heat Sink",
     "type": "Deployable",
     "sp": 3,
     "tags": [
@@ -162,7 +162,7 @@
     "license_level": 3,
     "deployables": [
       {
-        "name": "Smokestack Heatsink",
+        "name": "SMOKESTACK Heat Sink",
         "type": "Pylon",
         "activation": "Quick",
         "instances": 1,
@@ -180,7 +180,7 @@
   },
   {
     "id": "ms_exo_snapdragon_launcher",
-    "name": "SNAPDRAGON LAUNCHER",
+    "name": "Snapdragon Anti-Chassis Guided Missile Launcher",
     "type": "System",
     "sp": 1,
     "tags": [
@@ -202,7 +202,7 @@
   },
   {
     "id": "ms_exo_cynosure",
-    "name": "CYNOSURE",
+    "name": "Cynosure",
     "type": "Tech",
     "sp": 2,
     "tags": [
