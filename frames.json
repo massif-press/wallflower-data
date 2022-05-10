@@ -32,28 +32,40 @@
       {
         "name": "Rapid Deployment",
         "description": "On its first turn in any combat scene, the Kidd can deploy or activate any one system with the drone or deployable tag as a free action.",
-        "synergies": [{
-          "locations": ["deployable", "drone"],
-          "detail": "On its first turn in any combat, the Kidd can deploy or activate any one system with the DRONE or DEPLOYABLE tag as a free action."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "deployable",
+              "drone"
+            ],
+            "detail": "On its first turn in any combat, the Kidd can deploy or activate any one system with the DRONE or DEPLOYABLE tag as a free action."
+          }
+        ]
       },
       {
         "name": "Reroute Power",
         "description": "As a quick action 1/round, the Kidd can destroy one of its DEPLOYABLES or DRONES that was not deployed or created in the same round to either grant 1d6+1 OVERSHIELD to an allied character or deal 1d6+1 AP Energy Damage to a hostile character. The target, allied or hostile, must be adjacent to whatever is destroyed. Systems without LIMITED that are destroyed this way must be repaired before they can be used again.",
-        "actions": [{
-          "name": "Reroute Power",
-          "activation": "Quick",
-          "frequency": "1/round",
-          "detail": "Destroy one of your deployables or drones to either grant 1d6+1 OVERSHIELD to an allied character or deal 1d6+1 AP Energy Damage to a hostile character. The target, allied or hostile, must be adjacent to whatever is destroyed. Systems without LIMITED that are destroyed this way must be repaired before they can be used again."
-        }]
+        "actions": [
+          {
+            "name": "Reroute Power",
+            "activation": "Quick",
+            "frequency": "1/round",
+            "detail": "Destroy one of your deployables or drones to either grant 1d6+1 OVERSHIELD to an allied character or deal 1d6+1 AP Energy Damage to a hostile character. The target, allied or hostile, must be adjacent to whatever is destroyed. Systems without LIMITED that are destroyed this way must be repaired before they can be used again."
+          }
+        ]
       },
       {
         "name": "Recycle",
         "description": "At the end of any scene in which the Kidd used REROUTE POWER, it restores 1 charge to a LIMITED system of its choice with the DRONE or DEPLOYABLE tag.",
-        "synergies": [{
-          "locations": ["deployable", "drone"],
-          "detail": "At the end of any scene in which the Kidd used REROUTE POWER, it restores 1 charge to a LIMITED system of its choice with the DRONE or DEPLOYABLE tag."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "deployable",
+              "drone"
+            ],
+            "detail": "At the end of any scene in which the Kidd used REROUTE POWER, it restores 1 charge to a LIMITED system of its choice with the DRONE or DEPLOYABLE tag."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -85,16 +97,19 @@
           "frequency": "1/round"
         }
       ],
-      "counters": [{
-        "id": "ctr_jolly_roger",
-        "name": "Jolly Roger",
-        "default_value": 1,
-        "min": 1,
-        "max": 6
-      }]
+      "counters": [
+        {
+          "id": "ctr_jolly_roger",
+          "name": "Jolly Roger",
+          "default_value": 1,
+          "min": 1,
+          "max": 6
+        }
+      ]
     },
     "data_type": "frame",
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_kidd.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_kidd.png",
+    "license_id": "mf_kidd"
   },
   {
     "id": "mf_sagarmatha",
@@ -136,22 +151,32 @@
       {
         "name": "Heroism",
         "description": "1/scene the Sagarmatha can brace without sacrificing any actions or movement on its following turn.",
-        "synergies": [{
-          "locations": ["active_effects"],
-          "detail": "1/scene the Sagarmatha can brace without sacrificing any actions or movement on its following turn."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "active_effects"
+            ],
+            "detail": "1/scene the Sagarmatha can brace without sacrificing any actions or movement on its following turn."
+          }
+        ]
       },
       {
         "name": "Replaceable Parts",
         "description": "While resting, the Sagarmatha can be repaired at a rate of 1 repair per structure damage instead of 2.",
-        "bonuses": [{
-          "id": "cheap_struct",
-          "val": 1
-        }],
-        "synergies": [{
-          "locations": ["rest"],
-          "detail": "The Sagarmatha can be repaired at a rate of 1 Repair per 1 structure damage."
-        }]
+        "bonuses": [
+          {
+            "id": "cheap_struct",
+            "val": 1
+          }
+        ],
+        "synergies": [
+          {
+            "locations": [
+              "rest"
+            ],
+            "detail": "The Sagarmatha can be repaired at a rate of 1 Repair per 1 structure damage."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -163,7 +188,8 @@
       "use": "Next Turn"
     },
     "data_type": "frame",
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
+    "license_id": "mf_standard_pattern_i_everest"
   },
   {
     "id": "mf_tokugawa_alt_enkidu",
@@ -201,27 +227,40 @@
       {
         "name": "Primal Fury",
         "description": "<p>When the Enkidu ends its turn in the DANGER ZONE, it rears up, extends its PLASMA TALONS (see below), and enters a state of primal fury with the following effects:</p> <ul> <li>On hit, characters struck by the Enkidu&rsquo;s PLASMA TALONS immediately become IMMOBILIZED until the end of their next turn.</li> <li>As a special reaction, the Enkidu must use its PLASMA TALONS to attack any character (hostile or allied) that enters, exits or moves more than 1 space within its THREAT. This special reaction can be used once a turn, any number of times a round, and doesn’t count against the maximum number of reactions a turn, so the Enkidu can take other reactions normally.</li> </ul> <p>This state ends at the start of the Enkidu&rsquo;s turn, or if the Enkidu exits the DANGER ZONE.</p>",
-        "synergies": [{
-          "locations": ["heat"],
-          "detail": "When the Enkidu ends its turn in the Danger Zone, it enters the Primal Fury state."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "heat"
+            ],
+            "detail": "When the Enkidu ends its turn in the Danger Zone, it enters the Primal Fury state."
+          }
+        ]
       },
       {
         "name": "All Fours",
         "description": "While it’s in the DANGER ZONE, the Enkidu can’t make ranged or tech attacks but has 6 base SPEED.",
-        "synergies": [{
-          "locations": ["heat"],
-          "detail": "While it’s in the DANGER ZONE, the Enkidu can’t make ranged or tech attacks but has 6 base SPEED."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "heat"
+            ],
+            "detail": "While it’s in the DANGER ZONE, the Enkidu can’t make ranged or tech attacks but has 6 base SPEED."
+          }
+        ]
       },
       {
         "name": "Brute Strength",
         "description": "The Enkidu gets +1 accuracy on hull checks and saves.",
-        "synergies": [{
-          "locations": ["hull"],
-          "detail": "The Enkidu gets +1 accuracy on hull checks and saves."
-        }]
-      }, {
+        "synergies": [
+          {
+            "locations": [
+              "hull"
+            ],
+            "detail": "The Enkidu gets +1 accuracy on hull checks and saves."
+          }
+        ]
+      },
+      {
         "name": "Bloodsense",
         "description": "The Enkidu always knows if characters are at or under half of their maximum HP, but not the exact number."
       }
@@ -233,16 +272,21 @@
       "active_effect": "For the rest of the scene, the Enkidu gains the Bifurcate action, which can only be used in the DANGER ZONE",
       "activation": "Protocol",
       "use": "Encounter",
-      "active_actions": [{
-        "name": "Bifurcate",
-        "activation": "Full",
-        "detail": "<p>The Enkidu engages its monstrous strength, targets an adjacent character (allied or hostile) and attempts to tear them in half with its talons. If the target has 7 HP or less, only 1 STRUCTURE remaining, and doesn&rsquo;t have IMMUNITY to damage, they are immediately destroyed, the action cost of this ability is refunded, and the Enkidu can BOOST as a free action. If this action fails to destroy the target, the target instead takes 1 Kinetic Damage.</p> <p>At the end of the scene, the CP cost of BIFURCATE is refunded if the Enkidu did not use it to destroy any characters.</p>"
-      }],
-      "integrated": ["mw_tokugawa_alt_enkidu_integrated"]
+      "active_actions": [
+        {
+          "name": "Bifurcate",
+          "activation": "Full",
+          "detail": "<p>The Enkidu engages its monstrous strength, targets an adjacent character (allied or hostile) and attempts to tear them in half with its talons. If the target has 7 HP or less, only 1 STRUCTURE remaining, and doesn&rsquo;t have IMMUNITY to damage, they are immediately destroyed, the action cost of this ability is refunded, and the Enkidu can BOOST as a free action. If this action fails to destroy the target, the target instead takes 1 Kinetic Damage.</p> <p>At the end of the scene, the CP cost of BIFURCATE is refunded if the Enkidu did not use it to destroy any characters.</p>"
+        }
+      ],
+      "integrated": [
+        "mw_tokugawa_alt_enkidu_integrated"
+      ]
     },
     "data_type": "frame",
     "aptitude": {},
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_tokugawa.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_tokugawa.png",
+    "license_id": "mf_tokugawa"
   },
   {
     "id": "mf_genghis_alt_worldkiller_genghis_mk_i",
@@ -288,10 +332,14 @@
       {
         "name": "Weak Computer",
         "description": "The Genghis receives +1 Difficulty on all SYSTEM saves and checks.",
-        "synergies": [{
-          "locations": ["systems"],
-          "detail": "The Genghis receives +1 Difficulty on all SYSTEM saves and checks."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "systems"
+            ],
+            "detail": "The Genghis receives +1 Difficulty on all SYSTEM saves and checks."
+          }
+        ]
       }
     ],
     "core_system": {
@@ -299,10 +347,14 @@
       "description": "Inside his great suit the fireman smiles. He is a salamander upon the world, belching flame, cleaning away history, and leaving a new land for the living.",
       "passive_name": "FURIOSA",
       "passive_effect": "While in the DANGER ZONE, you are surrounded by shimmering heat that interferes with targeting. You gain soft cover. Additionally, other than you, characters within Burst 1 can’t take reactions.",
-      "passive_synergies": [{
-        "locations": ["heat"],
-        "detail": "While in the DANGER ZONE, you are surrounded by shimmering heat that interferes with targeting. You gain soft cover. Additionally, other than you, characters within Burst 1 can’t take reactions."
-      }],
+      "passive_synergies": [
+        {
+          "locations": [
+            "heat"
+          ],
+          "detail": "While in the DANGER ZONE, you are surrounded by shimmering heat that interferes with targeting. You gain soft cover. Additionally, other than you, characters within Burst 1 can’t take reactions."
+        }
+      ],
       "active_name": "A PLEASURE TO BURN",
       "active_effect": "<p>For the rest of the scene, the Genghis is wreathed in coruscating heat. Your FURIOSA aura grows to Burst 2, and your mech ignores all difficult terrain, simply melting through it.</p> <p>If you overheat during this time, your mech releases a blast of heat that melts the ground beneath it. Characters other than you within the affected area of FURIOSA take 1d6 AP Energy damage and must succeed on a HULL save or become IMMOBILIZED until the end of their next turn. The area then becomes difficult terrain for the rest of the scene.</p>",
       "activation": "Protocol",
@@ -310,7 +362,8 @@
     },
     "data_type": "frame",
     "aptitude": {},
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_genghis.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_genghis.png",
+    "license_id": "mf_genghis"
   },
   {
     "id": "mf_swallowtail_alt_swallowtail_ranger_variant",
@@ -351,10 +404,14 @@
       {
         "name": "Invigorating Scanners",
         "description": "1/round when the Swallowtail inflicts Lock On, an allied character in its sensor range and line of sight can move up to its speed as a reaction.",
-        "synergies": [{
-          "locations": ["lock_on"],
-          "detail": "1/round when the Swallowtail inflicts Lock On, an allied character in its sensor range and line of sight can move up to its speed as a reaction."
-        }]
+        "synergies": [
+          {
+            "locations": [
+              "lock_on"
+            ],
+            "detail": "1/round when the Swallowtail inflicts Lock On, an allied character in its sensor range and line of sight can move up to its speed as a reaction."
+          }
+        ]
       },
       {
         "name": "Weathering",
@@ -373,6 +430,7 @@
     },
     "data_type": "frame",
     "aptitude": {},
-    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_ranger.png"
+    "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_ranger.png",
+    "license_id": "mf_swallowtail"
   }
 ]
