@@ -295,15 +295,15 @@
       }
     ],
     "core_system": {
-      "name": "JUGGERNAUT REACTOR",
+      "name": "Juggernaut Reactor",
       "description": "Inside his great suit the fireman smiles. He is a salamander upon the world, belching flame, cleaning away history, and leaving a new land for the living.",
-      "passive_name": "FURIOSA",
+      "passive_name": "Furiosa",
       "passive_effect": "While in the DANGER ZONE, you are surrounded by shimmering heat that interferes with targeting. You gain soft cover. Additionally, other than you, characters within Burst 1 can’t take reactions.",
       "passive_synergies": [{
         "locations": ["heat"],
         "detail": "While in the DANGER ZONE, you are surrounded by shimmering heat that interferes with targeting. You gain soft cover. Additionally, other than you, characters within Burst 1 can’t take reactions."
       }],
-      "active_name": "A PLEASURE TO BURN",
+      "active_name": "A Pleasure to Burn",
       "active_effect": "<p>For the rest of the scene, the Genghis is wreathed in coruscating heat. Your FURIOSA aura grows to Burst 2, and your mech ignores all difficult terrain, simply melting through it.</p> <p>If you overheat during this time, your mech releases a blast of heat that melts the ground beneath it. Characters other than you within the affected area of FURIOSA take 1d6 AP Energy damage and must succeed on a HULL save or become IMMOBILIZED until the end of their next turn. The area then becomes difficult terrain for the rest of the scene.</p>",
       "activation": "Protocol",
       "use": "Encounter"
