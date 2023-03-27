@@ -296,7 +296,7 @@
   {
     "id": "ms_exo_carapace_cladding",
     "name": "Carapace Cladding",
-    "type": "AI",
+    "type": "System",
     "sp": 1,
     "tags": [
       {
