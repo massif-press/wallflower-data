@@ -1,6 +1,6 @@
 {
   "name": "@massif/wallflower-data",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Player-facing COMP/CON data from 'No Room for a Wallflower: Part I', a campaign for the LANCER TTRPG",
   "main": "index.js",
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/massif-press/lancer-data.git"
+    "url": "https://github.com/massif-press/wallflower-data.git"
   },
   "directories": {
     "lib": "lib"
@@ -22,8 +22,8 @@
   },
   "keywords": [
     "lancer",
-    "long-rim",
-    "longrim",
+    "wallflower",
+    "nrfaw",
     "compcon",
     "comp/con",
     "lancerrpg",
