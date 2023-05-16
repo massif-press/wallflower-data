@@ -1,7 +1,7 @@
 [
   {
     "id": "mw_blackspot_targeting_laser",
-    "name": "BLACKSPOT TARGETING LASER",
+    "name": "Blackspot Targeting Laser",
     "mount": "Main",
     "type": "Rifle",
     "sp": 1,
@@ -28,7 +28,8 @@
     "on_hit": "DRONE, SEEKING, and NEXUS weapons and systems gain +1 Accuracy to attack the target until the end of their next turn.",
     "on_crit": "The target also receives Lock On.",
     "description": "“Who tipped me the black spot the day we landed and began this dance?” – Treasure Island (1883)",
-    "data_type": "weapon"
+    "data_type": "weapon",
+    "license_id": "mf_kidd"
   },
   {
     "id": "mw_tokugawa_alt_enkidu_integrated",
@@ -60,7 +61,8 @@
         "id": "tg_reliable",
         "val": 2
       }
-    ]
+    ],
+    "license_id": ""
   },
   {
     "id": "mw_exo_plasma_maul",
@@ -92,7 +94,8 @@
       {
         "id": "tg_exotic"
       }
-    ]
+    ],
+    "license_id": ""
   },
   {
     "id": "mw_exo_sting_heavy_anti_armor_rifle",
@@ -129,7 +132,8 @@
       {
         "id": "tg_exotic"
       }
-    ]
+    ],
+    "license_id": ""
   },
   {
     "id": "mw_exo_steelpunch_heavy_needlebeam",
@@ -158,7 +162,8 @@
       {
         "id": "tg_exotic"
       }
-    ]
+    ],
+    "license_id": ""
   },
   {
     "id": "mw_exo_brood_siblings_molt",
@@ -184,6 +189,7 @@
       {
         "id": "tg_exotic"
       }
-    ]
+    ],
+    "license_id": ""
   }
 ]
