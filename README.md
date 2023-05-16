@@ -3,15 +3,15 @@
 ## Installation
 
 ```js
-npm add @compcon/wallflower-data
+npm add @massif/wallflower-data
 //or
-yarn add @compcon/wallflower-data
+yarn add @massif/wallflower-data
 ```
 
 ## Usage
 
 ```js
-import * as wallflower from '@compcon/wallflower-data';
+import * as wallflower from '@massif/wallflower-data';
 
 const wallflowerFrameData = wallflower.frames;
 ```
