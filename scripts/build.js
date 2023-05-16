@@ -1,8 +1,10 @@
-const zl = require('zip-lib');
+import zl from 'zip-lib';
 
-const info = require('../package.json');
+import info from '../package.json' assert { type: 'json' };
 
-const filepath = './' + info.name + '-' + info.version + '.lcp';
+const name = info.name.split('/').pop();
+
+const filepath = `./dist/${name}-${info.version}.lcp`;
 
 zl.archiveFolder('./lib', filepath).then(
   function () {

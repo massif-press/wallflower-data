@@ -18,9 +18,7 @@ async function ask(q) {
 async function main() {
   decap();
   const userInput = await ask(`Are you sure you want to commit these renames? (y/n)`);
-  console.log(userInput);
   if (userInput === 'y') {
-    console.log('writing files');
     decap(true);
   } else {
     console.log('aborting decap/rename');
