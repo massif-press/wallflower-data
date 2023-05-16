@@ -1,6 +1,6 @@
 {
   "name": "@massif/wallflower-data",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Player-facing COMP/CON data from 'No Room for a Wallflower: Part I', a campaign for the LANCER TTRPG",
   "main": "index.js",
   "type": "module",

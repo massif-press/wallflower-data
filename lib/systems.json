@@ -1,7 +1,7 @@
 [
   {
     "id": "ms_pebcac",
-    "name": "PEBCAC",
+    "name": "Pebcac",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -237,7 +237,7 @@
   },
   {
     "id": "ms_exo_opportunity",
-    "name": "OPPORTUNITY",
+    "name": "Opportunity",
     "type": "AI",
     "sp": 2,
     "tags": [

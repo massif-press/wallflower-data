@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const folderPath = './lib';
-const ignore = ['manufacturers.json', 'weapons.json', 'systems.json', 'mods.json'];
+const ignore = ['manufacturers.json', 'lcp_manifest.json'];
 
 const ignoreWords = ['{VAL}', '({VAL})', '{VAL}+', 'HP', 'GRIT', 'SP', 'AP', '(AP)'];
 
