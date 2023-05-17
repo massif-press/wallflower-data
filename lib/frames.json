@@ -113,7 +113,7 @@
   },
   {
     "id": "mf_sagarmatha",
-    "variant": "EVEREST",
+    "variant": "Everest",
     "source": "GMS",
     "name": "Sagarmatha",
     "mechtype": [
@@ -193,7 +193,7 @@
   },
   {
     "id": "mf_tokugawa_alt_enkidu",
-    "variant": "TOKUGAWA",
+    "variant": "Tokugawa",
     "source": "HA",
     "name": "Enkidu",
     "mechtype": [
@@ -290,7 +290,7 @@
   },
   {
     "id": "mf_genghis_alt_worldkiller_genghis_mk_i",
-    "variant": "GENGHIS",
+    "variant": "Genghis",
     "source": "HA",
     "name": "“Worldkiller” Genghis Mk I",
     "mechtype": [
@@ -367,7 +367,7 @@
   },
   {
     "id": "mf_swallowtail_alt_swallowtail_ranger_variant",
-    "variant": "SWALLOWTAIL",
+    "variant": "Swallowtail",
     "source": "SSC",
     "name": "Swallowtail (Ranger Variant)",
     "mechtype": [
