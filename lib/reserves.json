@@ -21,6 +21,13 @@
     "description": "Spend this reserve to grant your mech IMMUNITY to difficult terrain and SLOWED for the next mission."
   },
   {
+    "id": "reserves_scouting_encounter",
+    "name": "Scouting (Encounter)",
+    "type": "Tactical",
+    "label": "Resource",
+    "description": "Spend this reserve to look at one encounter and learn all information about the NPCs and sitrep involved before it starts. You must spend this at the start of combat."
+  },
+  {
     "id": "reserve_high_caliber_ammo",
     "name": "High Caliber Ammo",
     "type": "Tactical",
