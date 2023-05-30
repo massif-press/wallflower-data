@@ -10,7 +10,7 @@ const data = {
   // manufacturers: require('./lib/manufacturers.json'),
   // mods: require('./lib/mods.json'),
   pilot_gear: require('./lib/pilot_gear.json'),
-  // reserves: require('./lib/reserves.json'),
+  reserves: require('./lib/reserves.json'),
   // sitreps: require('./lib/sitreps.json'),
   // skills: require('./lib/skills.json'),
   // statuses: require('./lib/statuses.json'),
