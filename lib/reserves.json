@@ -43,14 +43,14 @@
   },
   {
     "id": "reserve_governors_farm_advanced_access",
-    "name": "Governor’S Farm Advanced Access",
+    "name": "Governor’s Farm Advanced Access",
     "type": "Resource",
     "label": "Resource",
     "description": "Permanently gain +1 ACCURACY on all non-combat skill checks to gather information, write new programs, or hack as long as you take those actions at the Governor’s Farm."
   },
   {
     "id": "reserve_fieldings_workshop_access",
-    "name": "Fielding’S Workshop Access",
+    "name": "Fielding’s Workshop Access",
     "type": "Resource",
     "label": "Resource",
     "description": "Permanently gain +1 ACCURACY and fill in an extra segment whenever you make progress on clocks to invent, create, or repair items or gear as long as you do it at Fielding’s Workshop."
