@@ -294,7 +294,8 @@
     "source": "HA",
     "name": "“Worldkiller” Genghis Mk I",
     "mechtype": [
-      "Striker"
+      "Striker",
+      "Defender"
     ],
     "y_pos": 25,
     "license_level": 2,
