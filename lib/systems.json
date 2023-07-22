@@ -1,7 +1,7 @@
 [
   {
     "id": "ms_pebcac",
-    "name": "Pebcac",
+    "name": "PEBCAC",
     "type": "Tech",
     "sp": 2,
     "tags": [
@@ -10,7 +10,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "KIDD",
+    "license": "Kidd",
     "license_level": 1,
     "actions": [
       {
@@ -38,7 +38,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "KIDD",
+    "license": "Kidd",
     "license_level": 2,
     "effect": "Expend a charge to deploy an omnibus plate to a space within Range 5.",
     "deployables": [
@@ -69,7 +69,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "KIDD",
+    "license": "Kidd",
     "license_level": 2,
     "actions": [
       {
@@ -97,7 +97,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "KIDD",
+    "license": "Kidd",
     "license_level": 3,
     "effect": "<p>1/round, expend a charge to deploy a team of FORGE-2 subalterns to start work on one of the following projects in a free space within line of sight and Range 5.</p> <p>The project is an immovable object that is finished at the start of your next turn, gaining +10 HP (maximum and current). It is canceled if it&rsquo;s destroyed.</p> <p>The subalterns aren&rsquo;t treated as separate entities and can&rsquo;t be targeted. They return to you if the project is destroyed, canceled, or finished, no matter where you are.</p> <p>If you OVERCHARGE to use this system again, it may ignore the 1/round limit, but the second project must be placed adjacent to the first.</p>",
     "deployables": [
@@ -162,7 +162,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "KIDD",
+    "license": "Kidd",
     "license_level": 3,
     "deployables": [
       {

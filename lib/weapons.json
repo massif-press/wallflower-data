@@ -23,7 +23,7 @@
       }
     ],
     "source": "IPS-N",
-    "license": "KIDD",
+    "license": "Kidd",
     "license_level": 1,
     "on_hit": "DRONE, SEEKING, and NEXUS weapons and systems gain +1 Accuracy to attack the target until the end of their next turn.",
     "on_crit": "The target also receives Lock On.",
