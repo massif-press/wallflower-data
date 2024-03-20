@@ -129,7 +129,7 @@
         "cost": 1,
         "size": 1,
         "hp": 5,
-        "detail": "When finished, this repair station generates a Burst 1 field within which allied characters gain IMMUNITY to burn and clear any burn currently them."
+        "detail": "When finished, this repair station generates a Burst 1 field within which allied characters gain IMMUNITY to burn and clear any burn currently affecting them."
       },
       {
         "type": "Project",
