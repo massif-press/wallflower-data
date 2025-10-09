@@ -11,14 +11,26 @@
     "name": "Shielding",
     "type": "Mech",
     "label": "Resource",
-    "description": "Get a mech tune-up from the folks at the Governor’s Farm. Spend this reserve to start the next combat only with OVERSHIELD 5."
+    "description": "Get a mech tune-up from the folks at the Governor’s Farm. Spend this reserve to start the next combat only with OVERSHIELD 5.",
+    "add_other": [
+      {
+        "type": "overshield",
+        "val": 5
+      }
+    ]
   },
   {
     "id": "reserve_weathering",
     "name": "Weathering",
     "type": "Mech",
     "label": "Resource",
-    "description": "Spend this reserve to grant your mech IMMUNITY to difficult terrain and SLOWED for the next mission."
+    "description": "Spend this reserve to grant your mech IMMUNITY to difficult terrain and SLOWED for the next mission.",
+    "add_resist": [
+      {
+        "immunity": "slowed"
+      }
+    ],
+    "add_special": [{ "attribute": "Immunity to Difficult Terrain" }]
   },
   {
     "id": "reserves_scouting_encounter",
@@ -32,7 +44,13 @@
     "name": "High Caliber Ammo",
     "type": "Tactical",
     "label": "Resource",
-    "description": "Spend this reserve at the start of any combat scene to give all your weapons AP until the end of the scene."
+    "description": "Spend this reserve at the start of any combat scene to give all your weapons AP until the end of the scene.",
+    "add_special": [
+      {
+        "attribute": "High Caliber Ammo",
+        "detail": "All your weapons gain AP until the end of the scene."
+      }
+    ]
   },
   {
     "id": "reserve_stash_of_private_moonshine",
@@ -67,6 +85,12 @@
     "name": "Patience Hookup",
     "type": "Resource",
     "label": "Resource",
-    "description": "You have a direct line to Patience. Spend this reserve to gain +1 ACCURACY on all skill checks and saves for a scene (even in combat) as Patience helps you out."
+    "description": "You have a direct line to Patience. Spend this reserve to gain +1 ACCURACY on all skill checks and saves for a scene (even in combat) as Patience helps you out.",
+    "add_special": [
+      {
+        "attribute": "Patience Hookup",
+        "detail": "You gain +1 ACCURACY on all skill checks and saves for a scene (even in combat) as Patience helps you out."
+      }
+    ]
   }
 ]

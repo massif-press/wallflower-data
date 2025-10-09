@@ -65,7 +65,9 @@
         "damage": [
           {
             "type": "Burn",
-            "val": 2
+            "val": 2,
+            "save": true,
+            "save_stat": "agility"
           }
         ],
         "detail": "Throw a molotov within Range 5. Affected characters within a Blast 1 must pass an Agility save or take 2 Burn.",
@@ -144,6 +146,11 @@
         "val": 4,
         "replace": true
       }
+    ],
+    "add_resist": [
+      {
+        "resistance": "energy"
+      }
     ]
   },
   {
@@ -181,6 +188,11 @@
         "val": 4,
         "replace": true
       }
+    ],
+    "add_resist": [
+      {
+        "resistance": "energy"
+      }
     ]
   },
   {
@@ -217,6 +229,11 @@
         "id": "pilot_speed",
         "val": 3,
         "replace": true
+      }
+    ],
+    "add_resist": [
+      {
+        "resistance": "energy"
       }
     ]
   }

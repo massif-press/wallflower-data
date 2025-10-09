@@ -20,7 +20,15 @@
       },
       {
         "name": "Bend to Will",
-        "description": "1/scene when an allied character in line of sight makes a structure or overheating check, they can roll twice and choose either result."
+        "description": "1/scene when an allied character in line of sight makes a structure or overheating check, they can roll twice and choose either result.",
+        "active_effects": [
+          {
+            "attribute": "Bend to Will",
+            "detail": "1/scene when an allied character in line of sight makes a structure or overheating check, they can roll twice and choose either result.",
+            "frequency": "1/scene",
+            "condition": "An allied character in line of sight makes a structure or overheating check."
+          }
+        ]
       },
       {
         "name": "Shared Subjectivity",
@@ -30,7 +38,14 @@
             "name": "Shared Subjectivity",
             "activation": "Quick",
             "frequency": "1/scene",
-            "detail": "Your mech immediately becomes STUNNED until the start of your next turn and your perception almost completely merges with that of the other character. Until the end of their next turn, any time that character makes an attack, check, or saving throw, they can choose to roll as normal or instead treat that attack, check, or save as if they had rolled a 10 on the d20. They must decide before rolling."
+            "detail": "Your mech immediately becomes STUNNED until the start of your next turn and your perception almost completely merges with that of the other character. Until the end of their next turn, any time that character makes an attack, check, or saving throw, they can choose to roll as normal or instead treat that attack, check, or save as if they had rolled a 10 on the d20. They must decide before rolling.",
+            "add_status": [
+              {
+                "id": "stunned",
+                "duration": "next_turn_start_self",
+                "target": "self"
+              }
+            ]
           }
         ]
       }
