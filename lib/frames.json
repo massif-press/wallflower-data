@@ -45,7 +45,7 @@
             "activation": "Quick",
             "frequency": "1/round",
             "detail": "Destroy one of your deployables or drones to either grant 1d6+1 OVERSHIELD to an allied character or deal 1d6+1 AP Energy Damage to a hostile character. The target, allied or hostile, must be adjacent to whatever is destroyed. Systems without LIMITED that are destroyed this way must be repaired before they can be used again.",
-            "damage": { "type": "energy", "val": "1d6+1", "ap": true },
+            "damage": { "type": "Energy", "val": "1d6+1", "ap": true },
             "add_other": { "type": "overshield", "val": "1d6+1" }
           }
         ]
@@ -70,6 +70,59 @@
       "use": "Encounter",
       "passive_name": "Jolly Roger",
       "passive_effect": "<p>At the start of every combat scene, your Kidd automatically connects to its paired Jolly Roger orbital satellite weapon. The efficacy of the Jolly Roger depends on maintaining a high level of calibration with the Kidd, which is tracked with a JOLLY ROGER DIE - 1d6, starting at 1.</p> <p>The die ticks up by 1 whenever you:</p> <ul> <li>deploy a DRONE or DEPLOYABLE</li> <li>take a tech action that targets at least one allied character.</li> </ul> <p>Each option can only increase the value of the of the JOLLY ROGER DIE once per round independently; however, the die also ticks up by 1 any time a hostile character takes a tech action against an allied character within your SENSORS, with no limit.</p> <p>1/round, you can activate the Jolly Roger as a quick action, resetting the JOLLY ROGER DIE to 1. Choose one of the following effects, based on the value of the die:</p> <p><b class='accent--text'>3+</b> <b>Plunder</b>: SCAN every hostile character in a Blast 1 area and give them LOCK ON.</p> <p><b class='accent--text'>5+</b> <b>Swindle</b>: Every hostile character in a Blast 1 area must succeed on a SYSTEMS save or become IMPAIRED, JAMMED, and SLOWED until the end of their next turn.</p> <p><b class='accent--text'>6</b> <b>Shiver Timbers</b>: Fire a beam weapon, punching a narrow hole through walls and obstructions. One hostile character must succeed on an AGILITY save or take 3d6 AP Energy Damage. On a success, they take half damage</p> <p>You do not require line of sight for any of these effects, they have the effective range of the battlefield, and they easily penetrate objects and terrain, although more potent barriers (e.g., energy shields that prevent effects from crossing them due to line of sight) block them normally</p>",
+      "passive_effects": [
+        {
+          "name": "Jolly Roger",
+          "detail": "Your JOLLY ROGER DIE die ticks up by 1 whenever you: <ul><li>deploy a DRONE or DEPLOYABLE</li><li>take a tech action that targets at least one allied character.</li></ul>Each option can only increase the value of the of the JOLLY ROGER DIE once per round independently; however, the die also ticks up by 1 any time a hostile character takes a tech action against an allied character within your SENSORS, with no limit. <br>1/round, you can activate the Jolly Roger as a quick action, resetting the JOLLY ROGER DIE to 1. Choose a Jolly Roger effect, based on the value of the die. You do not require line of sight for any of these effects, they have the effective range of the battlefield, and they easily penetrate objects and terrain, although more potent barriers (e.g., energy shields that prevent effects from crossing them due to line of sight) block them normally."
+        }
+      ],
+      "passive_synergies": [
+        {
+          "locations": ["drone", "deployable"],
+          "detail": "Increment your JOLLY ROGER DIE by 1 when you deploy a DRONE or DEPLOYABLE."
+        },
+        {
+          "locations": ["tech_attack"],
+          "detail": "Increment your JOLLY ROGER DIE by 1 when you take a tech action that targets at least one allied character."
+        }
+      ],
+      "active_actions": [
+        {
+          "name": "Plunder 3+ (Skull and Bones)",
+          "activation": "Quick",
+          "detail": "SCAN every hostile character in a <b>Blast 2</b> area and give them LOCK ON.",
+          "frequency": "1/round",
+          "add_status": [{ "id": "lockon", "aoe": "blast 2" }]
+        },
+        {
+          "name": "Swindle 5+ (Skull and Bones)",
+          "activation": "Quick",
+          "detail": "Every hostile character in a <b>Blast 2</b> area must succeed on a SYSTEMS save or become IMPAIRED, JAMMED, and SLOWED until the end of their next turn.",
+          "frequency": "1/round",
+          "add_status": [
+            { "id": "impaired", "aoe": "blast 2", "save": "systems" },
+            { "id": "jammed", "aoe": "blast 2", "save": "systems" },
+            { "id": "slowed", "aoe": "blast 2", "save": "systems" }
+          ]
+        },
+        {
+          "name": "Shiver Timbers 6 (Skull and Bones)",
+          "activation": "Quick",
+          "detail": "Fire a <b>Line 10</b> beam weapon, punching a narrow hole through walls and obstructions. Hostile character must succeed on an AGILITY save or take 3d6 AP Energy Damage. On a success, they take half damage.",
+          "frequency": "1/round",
+          "range": [{ "type": "line", "val": 10 }],
+          "damage": [
+            {
+              "type": "Energy",
+              "val": "3d6",
+              "ap": true,
+              "aoe": "line 10",
+              "save": "agility",
+              "save_half": true
+            }
+          ]
+        }
+      ],
       "passive_actions": [
         {
           "name": "Plunder 3+",
@@ -84,9 +137,9 @@
           "detail": "Every hostile character in a Blast 1 area must succeed on a SYSTEMS save or become IMPAIRED, JAMMED, and SLOWED until the end of their next turn.",
           "frequency": "1/round",
           "add_status": [
-            { "id": "impaired", "aoe": "blast 1", "save": true, "save_stat": "systems" },
-            { "id": "jammed", "aoe": "blast 1", "save": true, "save_stat": "systems" },
-            { "id": "slowed", "aoe": "blast 1", "save": true, "save_stat": "systems" }
+            { "id": "impaired", "aoe": "blast 1", "save": "systems" },
+            { "id": "jammed", "aoe": "blast 1", "save": "systems" },
+            { "id": "slowed", "aoe": "blast 1", "save": "systems" }
           ]
         },
         {
@@ -95,7 +148,7 @@
           "detail": "Fire a beam weapon, punching a narrow hole through walls and obstructions. One hostile character must succeed on an AGILITY save or take 3d6 AP Energy Damage. On a success, they take half damage.",
           "frequency": "1/round",
           "damage": [
-            { "type": "energy", "val": "3d6", "ap": true, "save": "half", "save_stat": "agility" }
+            { "type": "Energy", "val": "3d6", "ap": true, "save": "agility", "save_half": true }
           ]
         }
       ],
@@ -168,12 +221,6 @@
           {
             "id": "cheap_struct",
             "val": 1
-          }
-        ],
-        "synergies": [
-          {
-            "locations": ["rest"],
-            "detail": "The Sagarmatha can be repaired at a rate of 1 Repair per 1 structure damage."
           }
         ]
       }
@@ -287,7 +334,7 @@
           "activation": "Full",
           "condition": "Must be in the DANGER ZONE",
           "detail": "<p>The Enkidu engages its monstrous strength, targets an adjacent character (allied or hostile) and attempts to tear them in half with its talons. If the target has 7 HP or less, only 1 STRUCTURE remaining, and doesn't have IMMUNITY to damage, they are immediately destroyed, the action cost of this ability is refunded, and the Enkidu can BOOST as a free action. If this action fails to destroy the target, the target instead takes 1 Kinetic Damage.</p> <p>At the end of the scene, the CP cost of BIFURCATE is refunded if the Enkidu did not use it to destroy any characters.</p>",
-          "damage": [{ "type": "kinetic", "val": "1" }]
+          "damage": [{ "type": "Kinetic", "val": "1" }]
         }
       ],
       "integrated": ["mw_tokugawa_alt_enkidu_integrated"]
@@ -370,12 +417,11 @@
             {
               "id": "immobilized",
               "aoe": true,
-              "save": true,
-              "save_stat": "hull",
+              "save": "hull",
               "duration": "next_turn_end_target"
             }
           ],
-          "damage": [{ "type": "energy", "val": "1d6", "ap": true, "aoe": true }]
+          "damage": [{ "type": "Energy", "val": "1d6", "ap": true, "aoe": true }]
         }
       ],
       "activation": "Protocol",

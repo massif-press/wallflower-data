@@ -54,7 +54,6 @@
     ],
     "description": "Northstar Branch Robotics returned to their roots with the Omnibus Plate, creating a simple, deployable catalytic for frontline nexus users. Designed with adaptation in mind, Omnibus Plates can attach securely to any drone or deployable system, increasing that system’s efficacy in all aspects of employ.",
     "data_type": "system",
-    "aptitude": {},
     "license_id": "mf_kidd"
   },
   {
@@ -84,7 +83,6 @@
     ],
     "description": "As implied by the name, FABI modifications are ad hoc battlefield modifications that, while technically falling well outside the approved envelope of functionality and safety, are nonetheless popular among veteran pilots. FABI mods tend to be temporary in nature: removal of joule governors with quick-patched code, fieldcooked “hot” kinetic rounds, and so on.",
     "data_type": "system",
-    "aptitude": {},
     "license_id": "mf_kidd"
   },
   {
@@ -183,8 +181,8 @@
           {
             "type": "Energy",
             "val": "1d6+3",
-            "save": "half",
-            "save_stat": "agility",
+            "save": "agility",
+            "save_half": true,
             "aoe": "burst 2"
           }
         ]
@@ -192,7 +190,6 @@
     ],
     "description": "The IPS-N Kidd’s SMOKESTACK Heat Sink represents the latest in IPS-N’s heat dispersion systems for chassis and other CORE-powered vehicles and vessels. Utilizing proprietary axiomatics, the SMOKESTACK system establishes (via deployable pylon) a localized, minor, and stable pinhole into an omega state, allowing users to – for a certain value of thermodynamic exchange – cool excess heat debt by depositing it into that same state. Once the SMOKESTACK reaches capacity – a hard-coded feature – it detonates, making the system just as effective a weapon as it is a heat sink.",
     "data_type": "system",
-    "aptitude": {},
     "license_id": "mf_kidd"
   },
   {
@@ -233,7 +230,6 @@
     ],
     "description": "<ol> <li>Check all safety locks.</li> <li>Extend launch tube. Missile door should open automatically (if door fails to open, launcher will not fire).</li> <li>Activate rangefinder, acquire target. Wait for positive tone and visual confirmation that target has been acquired (TGT OK).</li> <li>Check backblast area. Minimum safe distance 100 meters. WARNING: backblast poses serious injury risk to unprotected personnel.</li> <li>Fire.</li> </ol>",
     "data_type": "system",
-    "aptitude": {},
     "license_id": ""
   },
   {
@@ -344,7 +340,7 @@
           {
             "type": "Explosive",
             "val": "2d6",
-            "save_stat": "agility",
+            "_stat": "agility",
             "aoe": "burst 3"
           }
         ]

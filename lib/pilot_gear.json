@@ -66,8 +66,7 @@
           {
             "type": "Burn",
             "val": 2,
-            "save": true,
-            "save_stat": "agility"
+            "save": "agility"
           }
         ],
         "detail": "Throw a molotov within Range 5. Affected characters within a Blast 1 must pass an Agility save or take 2 Burn.",

@@ -171,8 +171,8 @@
     "effect": "This weapon deals +1d6 bonus damage against targets with at least 1 Armor.",
     "bonus_damage": [
       {
-        "val": "1d6",
-        "condition": "Target has at least 1 Armor."
+        "detail": "Deal 1d6 bonus damage to targets that have at least 1 Armor.",
+        "val": "1d6"
       }
     ],
     "description": "The “steelpunch”, as it’s affectionately known, is a twin-beam directed-energy weapon developed by HUC engineers for use against the heavily reinforced hulls of remnant chassis and other hardened targets. The earliest models were derived from Second Committee–era mineral surveying lasers. An initial beam flash-vaporizes the target’s outer layer and the plasma bloom is instantly analyzed for material density and structural composition, following which the needlebeam fires a focused, highintensity pulsed beam tuned to defeat heavy armor. Performance against softer targets is significantly reduced, however, as excessive material ablation disrupts the secondary beam before an optimal effect can be achieved.",
@@ -207,9 +207,8 @@
     "effect": "1/round, this weapon deals +1d6 bonus damage to characters that are SHREDDED or STUNNED.",
     "bonus_damage": [
       {
-        "val": "1d6",
-        "condition": "Target is SHREDDED or STUNNED.",
-        "frequency": "1/round"
+        "detail": "Once per round, deal 1d6 bonus damage to a target that is SHREDDED or STUNNED.",
+        "val": "1d6"
       }
     ],
     "description": "Goodbye, old [friend/love]",
