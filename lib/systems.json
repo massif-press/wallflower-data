@@ -19,7 +19,7 @@
       }
     ],
     "description": "When the problem exists between chair and chassis, aggressive solutions are needed. This rather quick solution is an old system-level reboot program that is often used by asteroid miners dealing with aging hardware.",
-    "data_type": "system",
+
     "license_id": "mf_kidd"
   },
   {
@@ -53,7 +53,7 @@
       }
     ],
     "description": "Northstar Branch Robotics returned to their roots with the Omnibus Plate, creating a simple, deployable catalytic for frontline nexus users. Designed with adaptation in mind, Omnibus Plates can attach securely to any drone or deployable system, increasing that system’s efficacy in all aspects of employ.",
-    "data_type": "system",
+
     "license_id": "mf_kidd"
   },
   {
@@ -71,6 +71,7 @@
     "license_level": 2,
     "actions": [
       {
+        "name": "Field-Approved, Brass Ignorant Modifications",
         "activation": "Quick Tech",
         "detail": "<p>Choose an allied mech character within line of sight and SENSORS. You power up their weapons. When they make a ranged or melee attack roll:</p> <ul> <li>the attack's damage cannot be reduced in any way</li> <li>the kick from firing the weapon knocks them back 1 space in any direction after the attack</li> <li><strong>On Hit:</strong> their target must succeed on a HULL save or be knocked PRONE.</li> </ul> <p>This effect ends when your target successfully hits with a ranged or melee attack roll or at the end of the scene.</p>",
         "add_special": [
@@ -82,7 +83,7 @@
       }
     ],
     "description": "As implied by the name, FABI modifications are ad hoc battlefield modifications that, while technically falling well outside the approved envelope of functionality and safety, are nonetheless popular among veteran pilots. FABI mods tend to be temporary in nature: removal of joule governors with quick-patched code, fieldcooked “hot” kinetic rounds, and so on.",
-    "data_type": "system",
+
     "license_id": "mf_kidd"
   },
   {
@@ -145,7 +146,7 @@
       }
     ],
     "description": "The FORGE line of subalterns represents IPS-N’s premier range of frontline autonomous robotic humanoids. Produced by its robotics division, Northstar Branch Robotics, FORGE-2 subalterns are IPS-N’s newest combat engineering models, built to user scale and function.",
-    "data_type": "system",
+
     "license_id": "mf_kidd"
   },
   {
@@ -189,7 +190,7 @@
       }
     ],
     "description": "The IPS-N Kidd’s SMOKESTACK Heat Sink represents the latest in IPS-N’s heat dispersion systems for chassis and other CORE-powered vehicles and vessels. Utilizing proprietary axiomatics, the SMOKESTACK system establishes (via deployable pylon) a localized, minor, and stable pinhole into an omega state, allowing users to – for a certain value of thermodynamic exchange – cool excess heat debt by depositing it into that same state. Once the SMOKESTACK reaches capacity – a hard-coded feature – it detonates, making the system just as effective a weapon as it is a heat sink.",
-    "data_type": "system",
+
     "license_id": "mf_kidd"
   },
   {
@@ -212,7 +213,9 @@
     "effect": "<p>1/mission, the \"Snapdragon\" anti-chassis guided missile launcher can be used to make a ranged attack with the following profile:</p><p>Heavy Launcher, Reliable 4, Seeking <br> Range 15, 2d6 + 2 Explosive Damage</p>",
     "actions": [
       {
+        "name": "Snapdragon Anti-Chassis Guided Missile Launcher",
         "activation": "Quick",
+        "frequency": "1/mission",
         "detail": "Fire the Snapdragon anti-chassis guided missile launcher. This is a ranged attack with the following profile: Heavy Launcher, Reliable 4, Seeking. Range 15, 2d6 + 2 Explosive Damage. This attack ignores cover and Hard to Hit. You cannot make this attack if you are JAMMED.",
         "range": [
           {
@@ -229,7 +232,7 @@
       }
     ],
     "description": "<ol> <li>Check all safety locks.</li> <li>Extend launch tube. Missile door should open automatically (if door fails to open, launcher will not fire).</li> <li>Activate rangefinder, acquire target. Wait for positive tone and visual confirmation that target has been acquired (TGT OK).</li> <li>Check backblast area. Minimum safe distance 100 meters. WARNING: backblast poses serious injury risk to unprotected personnel.</li> <li>Fire.</li> </ol>",
-    "data_type": "system",
+
     "license_id": ""
   },
   {
@@ -289,7 +292,7 @@
       {
         "name": "Knock",
         "activation": "Quick Tech",
-        "detail": "<p>Opportunity lends their extraordinary processing power and their precise (if exacting) aid, optimizing an ally's systems to a more &ldquo;organized&rdquo; state.</p> <p>Choose an allied mech character within line of sight and SENSORS to benefit from Opportunity's optimization. They gain immunity to heat from other characters, +1 Accuracy on all SYSTEMS checks and saves, and attackers gain +1 Difficulty on tech attacks against them.</p> <p>This effect ends immediately when you take this action again, or when the affected character &ldquo;makes a mess of things&rdquo; by taking an attack roll, forcing a save, or taking any other action that would affect a hostile character.</p>",
+        "detail": "<p>Opportunity lends their extraordinary processing power and their precise (if exacting) aid, optimizing an ally's systems to a more “organized” state.</p> <p>Choose an allied mech character within line of sight and SENSORS to benefit from Opportunity's optimization. They gain immunity to heat from other characters, +1 Accuracy on all SYSTEMS checks and saves, and attackers gain +1 Difficulty on tech attacks against them.</p> <p>This effect ends immediately when you take this action again, or when the affected character “makes a mess of things” by taking an attack roll, forcing a save, or taking any other action that would affect a hostile character.</p>",
         "add_special": [
           {
             "attribute": "Opportunity's Optimization",
@@ -298,7 +301,6 @@
         ]
       }
     ],
-    "description": "",
     "license_id": ""
   },
   {
@@ -340,7 +342,7 @@
           {
             "type": "Explosive",
             "val": "2d6",
-            "_stat": "agility",
+            "save": "agility",
             "aoe": "burst 3"
           }
         ]
@@ -368,6 +370,7 @@
     ],
     "actions": [
       {
+        "name": "Carapace Cladding",
         "activation": "Quick",
         "detail": "Immediately clear all Burn from your mech."
       }

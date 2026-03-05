@@ -4,7 +4,14 @@
     "name": "Ammo Crate",
     "type": "Tactical",
     "label": "Resource",
-    "description": "Once, while resting, spend this reserve to restore 1 charge for your entire party’s LIMITED systems and weapons."
+    "description": "Once, while resting, spend this reserve to restore 1 charge for your entire party's LIMITED systems and weapons.",
+    "actions": [
+      {
+        "name": "Ammo Crate",
+        "activation": "Other",
+        "detail": "While resting, spend this reserve to restore 1 charge for your entire party's LIMITED systems and weapons."
+      }
+    ]
   },
   {
     "id": "reserve_shielding",
@@ -57,7 +64,14 @@
     "name": "Stash Of Private Moonshine",
     "type": "Resource",
     "label": "Resource",
-    "description": "Trade with someone in the colony for favors owed. Gain +1 ACCURACY on all non-combat skill checks as long as that person can help you. This effect ends at the end of the following downtime."
+    "description": "Trade with someone in the colony for favors owed. Gain +1 ACCURACY on all non-combat skill checks as long as that person can help you. This effect ends at the end of the following downtime.",
+    "bonuses": [
+      {
+        "id": "accuracy",
+        "val": 1,
+        "detail": "+1 Accuracy on all non-combat skill checks as long as a colony contact can help you."
+      }
+    ]
   },
   {
     "id": "reserve_colony_drop",
@@ -71,14 +85,28 @@
     "name": "Governor’s Farm Advanced Access",
     "type": "Resource",
     "label": "Resource",
-    "description": "Permanently gain +1 ACCURACY on all non-combat skill checks to gather information, write new programs, or hack as long as you take those actions at the Governor’s Farm."
+    "description": "Permanently gain +1 ACCURACY on all non-combat skill checks to gather information, write new programs, or hack as long as you take those actions at the Governor's Farm.",
+    "bonuses": [
+      {
+        "id": "accuracy",
+        "val": 1,
+        "detail": "+1 Accuracy on non-combat skill checks to gather information, write new programs, or hack at the Governor's Farm."
+      }
+    ]
   },
   {
     "id": "reserve_fieldings_workshop_access",
     "name": "Fielding’s Workshop Access",
     "type": "Resource",
     "label": "Resource",
-    "description": "Permanently gain +1 ACCURACY and fill in an extra segment whenever you make progress on clocks to invent, create, or repair items or gear as long as you do it at Fielding’s Workshop."
+    "description": "Permanently gain +1 ACCURACY and fill in an extra segment whenever you make progress on clocks to invent, create, or repair items or gear as long as you do it at Fielding's Workshop.",
+    "bonuses": [
+      {
+        "id": "accuracy",
+        "val": 1,
+        "detail": "+1 Accuracy and fill in an extra clock segment when inventing, creating, or repairing items or gear at Fielding's Workshop."
+      }
+    ]
   },
   {
     "id": "reserve_patience_hookup",

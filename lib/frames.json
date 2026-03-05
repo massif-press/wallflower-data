@@ -63,7 +63,6 @@
     ],
     "core_system": {
       "name": "The Jolly Roger",
-      "description": "",
       "active_name": "Skull and Bones",
       "active_effect": "For the rest of the scene, Plunder and Swindle become Blast 2 and Shiver Timbers affects all characters in a Line 10 path.",
       "activation": "Protocol",
@@ -162,7 +161,7 @@
         }
       ]
     },
-    "data_type": "frame",
+
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/mf_kidd.png",
     "license_id": "mf_kidd"
   },
@@ -247,7 +246,7 @@
       "activation": "Quick",
       "use": "Next Turn"
     },
-    "data_type": "frame",
+
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/nodata.png",
     "license_id": "mf_standard_pattern_i_everest"
   },
@@ -334,12 +333,12 @@
           "activation": "Full",
           "condition": "Must be in the DANGER ZONE",
           "detail": "<p>The Enkidu engages its monstrous strength, targets an adjacent character (allied or hostile) and attempts to tear them in half with its talons. If the target has 7 HP or less, only 1 STRUCTURE remaining, and doesn't have IMMUNITY to damage, they are immediately destroyed, the action cost of this ability is refunded, and the Enkidu can BOOST as a free action. If this action fails to destroy the target, the target instead takes 1 Kinetic Damage.</p> <p>At the end of the scene, the CP cost of BIFURCATE is refunded if the Enkidu did not use it to destroy any characters.</p>",
-          "damage": [{ "type": "Kinetic", "val": "1" }]
+          "damage": [{ "type": "Kinetic", "val": 1 }]
         }
       ],
       "integrated": ["mw_tokugawa_alt_enkidu_integrated"]
     },
-    "data_type": "frame",
+
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_tokugawa.png",
     "license_id": "mf_tokugawa"
   },
@@ -427,7 +426,7 @@
       "activation": "Protocol",
       "use": "Encounter"
     },
-    "data_type": "frame",
+
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_genghis.png",
     "license_id": "mf_genghis"
   },
@@ -515,7 +514,7 @@
       "activation": "Protocol",
       "use": "Encounter"
     },
-    "data_type": "frame",
+
     "image_url": "https://compcon-image-assets.s3.amazonaws.com/frames/alt_ranger.png",
     "license_id": "mf_swallowtail"
   }

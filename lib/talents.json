@@ -23,7 +23,7 @@
         "description": "1/scene when an allied character in line of sight makes a structure or overheating check, they can roll twice and choose either result.",
         "active_effects": [
           {
-            "attribute": "Bend to Will",
+            "name": "Bend to Will",
             "detail": "1/scene when an allied character in line of sight makes a structure or overheating check, they can roll twice and choose either result.",
             "frequency": "1/scene",
             "condition": "An allied character in line of sight makes a structure or overheating check."

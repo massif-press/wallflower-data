@@ -4,6 +4,12 @@
     "name": "Anti-Armor Signature Weapon",
     "type": "Weapon",
     "effect": "If a pilot takes an Anti-Armor Signature Weapon on a mission, they can’t take any other pilot weapons.",
+    "active_effects": [
+      {
+        "name": "Anti-Armor Signature Weapon",
+        "detail": "If you take this weapon on a mission, you can't take any other pilot weapons."
+      }
+    ],
     "tags": [
       {
         "id": "tg_ap"
