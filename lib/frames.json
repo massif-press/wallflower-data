@@ -101,7 +101,7 @@
           "add_status": [
             { "id": "impaired", "aoe": "blast 2", "save": "systems" },
             { "id": "jammed", "aoe": "blast 2", "save": "systems" },
-            { "id": "slowed", "aoe": "blast 2", "save": "systems" }
+            { "id": "slow", "aoe": "blast 2", "save": "systems" }
           ]
         },
         {
@@ -138,7 +138,7 @@
           "add_status": [
             { "id": "impaired", "aoe": "blast 1", "save": "systems" },
             { "id": "jammed", "aoe": "blast 1", "save": "systems" },
-            { "id": "slowed", "aoe": "blast 1", "save": "systems" }
+            { "id": "slow", "aoe": "blast 1", "save": "systems" }
           ]
         },
         {
