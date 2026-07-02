@@ -390,7 +390,7 @@
         "bonuses": [
           {
             "id": "systems",
-            "difficulty": 1
+            "accuracy": -1
           }
         ]
       }

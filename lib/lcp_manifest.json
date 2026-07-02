@@ -3,7 +3,7 @@
   "author": "Massif Press",
   "description": "Player-side COMP/CON data for the LANCER's first narrative campaign, including exotic gear, the IPS-N Kidd, Variant Frames, the GMS Sagarmatha, and the Empath Talent.",
   "item_prefix": "wf-act1",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "image_url": "https://img.itch.zone/aW1nLzUzOTk0MzIuanBn/315x250%23cb/YuE1nt.jpg",
   "website": "https://massif-press.itch.io/no-room-for-a-wallflower-act-1",
   "version_history": [
@@ -16,6 +16,13 @@
       "version": "3.0.3",
       "date": "2026-05-01",
       "changes": ["Corrected a bad status ID"]
+    },
+    {
+      "version": "3.0.4",
+      "date": "2026-07-02",
+      "changes": [
+        "Corrected Worldkiller's 'Weak Computer' trait to properly set negative bonus values"
+      ]
     }
   ],
   "v3": true
